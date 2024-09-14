@@ -1,0 +1,340 @@
+:root {
+    --font-size--html: 16px;
+    --font-size--banner--bold: 2.5rem;
+    --font-size--banner--regular: 1.5rem;
+    --font-size--h1: 1.5rem;
+    --font-size--h2: 1.125rem;
+    --font-size--h3: 0.875rem;
+    --font-size--h4: 0.875rem;
+    --font-size--h5: 0.875rem;
+    --font-size--h6: 0.875rem;
+    --font-size--special: 0.625rem;
+    --font-size--regular: 0.875rem;
+    --font-size--small: 0.875rem;
+    --border-radius--main: 16px;
+    --border--main: 1px;
+    --color--black: #0F0F0F;
+    --color--black-second: #161618;
+    --color--white: #FFFFFF;
+    --color--gray: #D9D9D9;
+    --color--blue: #394FC2;
+    --color--green: #2ABF6F;
+    --color--red: #FE4819;
+    --color--light-gray: #F6F6F6;
+    --color--dark-gray: #989898;
+    --color--light-gray-border: #E0E0E0;
+    --color--dark-gray-border: #585858;
+    --transition--main: 0.3s ease 0s;
+}
+.sprites {
+    display: none;
+}
+html {
+    font-size: var(--font-size--html);
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color--black);
+    &._lock {
+        overflow: hidden;
+    }
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        &,
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+	        margin: 0;
+	        border: none;
+        	box-sizing: border-box;
+            font-family: '';
+            font-weight: 400;
+            line-height: 150%;
+            color: var(--color--black);
+            font-style: normal;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+        & a, a:link, a:visited  {
+            text-decoration: none;
+        }
+        & a:hover  {
+            text-decoration: none;
+        }
+        & aside, & nav, & footer, & header, & section, & main {
+            display: block;
+        }
+        & h1, & h2, & h3, & h4, & h5, & h6, & p {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+        & ul, & ul li {
+            list-style: none;
+        }
+        & address {
+            font-style: normal;
+        }
+        & input, & textarea, & button, & select {
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            background-color: transparent;
+        }
+        & input::-ms-clear {
+            display: none;
+        }
+        & textarea {
+            resize: none;
+        }
+        & button, & input[type="submit"] {
+            display: inline-block;
+            box-shadow: none;
+            background-color: transparent;
+            background: none;
+            cursor: pointer;
+        }
+        & textarea, & textarea:focus, & textarea:active,
+        & input, & input:focus, & input:active,
+        & button:focus, & button:active {
+            outline: none;
+        }
+        & button::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+        & label {
+            cursor: pointer;
+        }
+        & legend {
+            display: block;
+        }
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
+        & picture{
+            display: flex;
+            & source{
+                display: none;
+            }
+        }
+        & main {
+            flex: 1 1 auto;
+        }
+        & header, & footer, & main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        & header, & footer, & section {
+            & .container {
+                width: 100%;
+                max-width: 1440px;
+                margin: 0 auto;
+            }
+        }
+        & .absolute-content, & .absolute-link {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+    }
+}
+body {
+    & .wrapper {
+        & h1, & .h1, & h2, & .h2, & h3, & .h3, & h4, & .h4, & h5, & .h5, & h6, & .h6 {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        & h1, & .h1 {
+            font-size: var(--font-size--h1);
+        }
+        & h2, & .h2 {
+            font-size: var(--font-size--h2);
+        }
+        & h3, & .h3 {
+            font-size: var(--font-size--h3);
+        }
+        & h4, & .h4 {
+            font-size: var(--font-size--h4);
+        }
+        & h5, & .h5 {
+            font-size: var(--font-size--h5);
+        }
+        & h6, & .h6 {
+            font-size: var(--font-size--h6);
+        }
+        & p, 
+        & span, 
+        & b, 
+        & strong, 
+        & a,
+        & select, 
+        & button, 
+        & input,
+        & textarea,
+        & time,
+        & label,
+        & .choices, 
+        & .main-button, 
+        & ul,
+        & ol,
+        & li,
+        & blockquote,
+        & q,
+        & .columns
+        {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        & ul, & ol {
+            list-style-position: inside;
+        }
+        & hr {
+            width: 100%;
+            outline: none;
+            border: none;
+        }
+        & b, & .bold, & strong {
+
+        }
+        & blockquote, & q {
+
+        }
+        & p {
+
+        }
+        & a {
+
+        }
+        & span {
+
+        }
+        & time {
+
+        }
+        & label {
+
+        }
+        & input, & textarea {
+
+        }
+        & form {
+            & label {
+
+            }
+        }
+        & .main-button, & button {
+
+        }
+        & .text-content {
+            & h1, & .h1 {
+                
+            }
+            & h2, & .h2 {
+                
+            }
+            & h3, & .h3 {
+                
+            }
+            & h4, & .h4 {
+                
+            }
+            & h5, & .h5 {
+                
+            }
+            & h6, & .h6 {
+                
+            }
+            & ul, & ol {
+            }
+            & hr {
+            }
+            & b, & .bold, & strong {
+    
+            }
+            & blockquote, & q {
+    
+            }
+            & p {
+    
+            }
+            & a {
+    
+            }
+            & span {
+    
+            }
+            & time {
+    
+            }
+            & label {
+    
+            }
+            & input, & textarea {
+    
+            }
+            & .main-button, & button {
+
+            }
+        }
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        & .wrapper {
+        }
+    }
+}
+@media (min-width: 760px) {
+    :root {
+        --font-size--banner--bold: 4.5rem;
+        --font-size--banner--regular: 4rem;
+        --font-size--h1: 3.75rem;
+        --font-size--h2: 2rem;
+        --font-size--h3: 1.5rem;
+        --font-size--h4: 1.5rem;
+        --font-size--h5: 1.5rem;
+        --font-size--h6: 1rem;
+        --font-size--special: 1.125rem;
+        --font-size--regular: 1rem;
+        --font-size--small: 0.875rem;
+    }
+    body {
+        & .wrapper {
+        }
+    }
+}
+@media (min-width: 320px) {
+    :root {
+        --font-size--banner--bold: 4rem;
+        --font-size--banner--regular: 3.5rem;
+        --font-size--h1: 3rem;
+        --font-size--h2: 2rem;
+        --font-size--h3: 1.5rem;
+        --font-size--h4: 1.5rem;
+        --font-size--h5: 1.5rem;
+        --font-size--h6: 1rem;
+        --font-size--special: 1rem;
+        --font-size--regular: 1rem;
+        --font-size--small: 0.875rem;
+    }
+    body {
+        & .wrapper {
+        }
+    }
+}

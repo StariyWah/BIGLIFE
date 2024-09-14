@@ -1,0 +1,30 @@
+1) качаем gitbash и node.js
+npm init -yes
+npm i gulp -D
+npm i gulp-cli -g
+gulp -v
+npm i sass gulp-sass -D
+npm i gulp-concat -D
+npm i gulp-uglify-es -D
+npm i browser-sync -D
+npm i gulp-autoprefixer -D
+npm i gulp-clean -D
+npm i gulp-imagemin@7.1.0 -D
+npm i gulp-rename -D
+npm i gulp-avif -D
+npm i gulp-webp -D
+npm i gulp-newer -D
+npm i gulp-ttf2woff -D
+npm i gulp-ttf2woff2 -D
+npm i gulp-file-include -D
+npm i swiper -D
+npm i choices.js -D
+npm i tippy.js -D
+npm i @popperjs/core -D
+npm i gulp-svg-sprite -D
+npm i gulp-cheerio -D
+npm i gulp-babel @babel/core @babel/preset-env -D
+npm i gulp-zip -D
+npm i vinyl-ftp -D
+git config --global user.name "StariyWah"
+git config --global user.email "aleksejivanov03bk.ru@gmail.com"
