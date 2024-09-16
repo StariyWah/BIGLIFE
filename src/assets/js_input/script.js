@@ -33,4 +33,36 @@ $(document).ready(function(){
             }
         });
     });
+    let radioButtons = document.querySelectorAll('.input__container_radio');
+    radioButtons.forEach(button => {
+        if($(button).find('input').prop('checked') == true) {
+            $(button).addClass('_checked');
+        }
+    });
+    $(document).on('click', '.input__container_radio', function(e) {
+        $(this).parents('.form__part_radio').find('.input__container_radio').removeClass('_checked');
+        $(this).parents('.form__part_radio').find('.input__container_radio input').prop('checked', false);
+        $(this).toggleClass('_checked');
+        $(this).find('input').prop('checked', true);
+        return false;
+    });
+    $(document).on('click', '.form__part_subscribe .input__container_radio', function(e) {
+        let inputId = $(this).attr('data-radio-id');
+        if(inputId !== null && inputId !== undefined && inputId !== '') {
+            let parent = $(this).parents('.form__part_subscribe');
+            if(parent.length > 0) {
+                let inputs = document.querySelectorAll('input[name="subscription-input"]');
+                let input = $(parent).find(`input[data-id="${inputId}"]`);            
+                if(input.length > 0 && inputs.length > 0) {
+                    inputs.forEach(element => {
+                        if(element == input[0]) {
+                            $(element).show();
+                        } else {
+                            $(element).hide();
+                        }
+                    });
+                }
+            }
+        }
+    });
 });

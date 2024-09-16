@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    @@include('../../../sprite.svg')
+   <div class="wrapper">
+        @@include('../parts/header.html')
+        <main>
+            <section class="information-section undefined-section">
+                <div class="container">
+                    <div class="information-section__container">
+                        <picture class="background-picture">
+                            <source media="(min-width:761px)" srcset="assets/images/background-lines-2.svg">
+                            <img src="assets/images/background-lines-3.svg">
+                        </picture>
+                        <div class="information-section__content">
+                            <picture class="logotype">
+                                <img src="assets/images/logotype-first-part.svg">
+                            </picture>
+                            <h1>404 - страница не <br>найдена</h1>
+                            <a href="index.html">вернуться на главную</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscription-section">
+                <div class="container">
+                    <div class="two-columns">
+                        <div class="two-columns__column">
+                            <picture class="background-picture">
+                                <img src="assets/images/background-lines-4.svg">
+                            </picture>
+                            <form action="#">
+                                <h2>Подписывайтесь на нашу рассылку и получайте подарки!</h2>
+                                <div class="form__part_subscribe">
+                                    <div class="form__part_radio">
+                                        <div class="input__container input__container_radio" data-radio-id="email">
+                                            <input type="radio" name="radio-email" id="radio-email" value="email" checked>
+                                            <svg>
+                                                <use xlink:href="#mail-icon"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="input__container input__container_radio" data-radio-id="telegram">
+                                            <input type="radio" name="radio-telegram" value="telegram">
+                                            <svg>
+                                                <use xlink:href="#telegram-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <input type="email" name="subscription-input" id="subscription-mail" placeholder="Ваша почта" data-id="email">
+                                    <input type="text" name="subscription-input" id="subscription-telegram" placeholder="Ваш телеграм" data-id="telegram" style="display: none;">
+                                </div>
+                                <button type="submit">
+                                    Подписаться
+                                    <svg>
+                                        <use xlink:href="#right-arrow-icon"></use>
+                                    </svg>
+                                </button>
+                                <div class="privacy-policy checkbox__container">
+                                    <input type="checkbox" name="privacy-policy-agree" id="privacy-policy-agree">
+                                    <label for="privacy-policy-agree">
+                                        Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('../parts/footer.html')
+   </div>
+   <script src="assets/js/jquery-3.7.1.min.js"></script>
+   <script src="assets/js/aos.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/choices.min.js"></script>
+   <script src="assets/js/fancybox.umd.js"></script>
+   <script src="assets/js/video.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
