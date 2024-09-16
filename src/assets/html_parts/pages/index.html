@@ -4,21 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     @@include('../../../sprite.svg')
    <div class="wrapper">
         @@include('../parts/header.html')
         <main>
-            <section>
-                <svg>
-                    <use xlink:href="#otp"></use>
-                </svg>
+            <section class="main-banner-section">
+                <div class="container">
+                    <div class="main-banner-section__heading">
+                        <picture class="background-picture">
+                            <img src="assets/images/background-lines-1.svg">
+                        </picture>
+                        <p class="h3">Повышаем ваше финансовое благосостояние</p>
+                        <h1><b>BIG LIFE —</b> центр финансового развития</h1>
+                    </div>
+                    <picture class="proportional-picture">
+                        <source srcset="assets/images/main-banner.avif" type="image/avif">
+                        <source srcset="assets/images/main-banner.webp" type="image/webp">
+                        <img src="assets/images/main-banner.png" alt="Картинка">
+                    </picture>
+                    <div class="main-banner-section__advantages">
+                        <p><mark>Даем</mark> реальные инструменты увеличения доходов</p>
+                        <p><mark>Разрабатываем</mark> стратегии финансового развития</p>
+                    </div>
+                    <div class="main-banner-section__buttons">
+                        <a href="#" class="main-button _contour">Направления развития</a>
+                        <a href="#" class="main-button">
+                            Получить консультацию
+                            <svg>
+                                <use xlink:href="#right-arrow-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="main-about-us-section">
+                <div class="container">
+                    <h2>О нас</h2>
+                    <div class="two-columns">
+                        <div class="two-columns__column">
+                            <picture class="proportional-picture">
+                                <source srcset="assets/images/about-us.avif" type="image/avif">
+                                <source srcset="assets/images/about-us.webp" type="image/webp">
+                                <img src="assets/images/about-us.png" alt="Картинка">
+                            </picture>
+                        </div>
+                        <div class="two-columns__column">
+                            <h3>Мы — не просто центр финансового развития, мы помогаем вам выйти на новый уровень жизни.</h3>
+                            <div class="load-more">
+                                <div class="load-more__main-part">
+                                    <div class="text-content">
+                                        <p>Наша специализация заключается в:</p>
+                                        <ul>
+                                            <li>проведении оценки финансового положения;</li>
+                                            <li>разработке стратегии развития;</li>
+                                            <li>уменьшение долговых обязательств и финансовой нагрузки;</li>
+                                            <li>помощь в получении денежных средств для личных целей, а также для открытия и развития малого и среднего бизнеса;</li>
+                                            <li>сопровождение клиентов на всем пути финансового роста.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="load-more__hidden-part" style="display: none;">
+                                    <div class="text-content">
+                                        <ul>
+                                            <li>проведении оценки финансового положения;</li>
+                                            <li>разработке стратегии развития;</li>
+                                            <li>уменьшение долговых обязательств и финансовой нагрузки;</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="load-more__button" data-close-text="Скрыть" data-open-text="Узнать больше">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-about-us__advantages">
+                        <div class="main-about-us__advantages__item" style="border-color: #394FC2;">
+                            <div class="item__content">
+                                <p class="advantages__heading">10к</p>
+                                <p class="advantages__sub-heading">Консультаций</p>
+                                <p class="advantages__description">
+                                    провели за всё время нашей работы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main-about-us__advantages__item" style="border-color: #2ABF6F;">
+                            <div class="item__content">
+                                <p class="advantages__heading">7к</p>
+                                <p class="advantages__sub-heading">Человек</p>
+                                <p class="advantages__description">
+                                    воспользовались нашими услугами или прошли обучение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main-about-us__advantages__item" style="border-color: #989898;">
+                            <div class="item__content">
+                                <p class="advantages__heading">20+</p>
+                                <p class="advantages__sub-heading">инструментов</p>
+                                <p class="advantages__description">
+                                    индивидуальный подбор инструментов финансового развития
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main-about-us__advantages__item" style="border-color: #FE4819;">
+                            <div class="item__content">
+                                <p class="advantages__heading">15 лет</p>
+                                <p class="advantages__sub-heading">Опыта</p>
+                                <p class="advantages__description">
+                                    помогаем нашим клиентам и ученикам
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="directions-section">
+                <div class="container">
+                    <div class="section__heading">
+                        <h2>Направления развития в BIG LIFE</h2>
+                        <p>
+                            Наши программы помогают на любом уровне развития. От закрытия долгов 
+                            или уменьшения платежей по кредитным продуктам, до формирования личного 
+                            капитала, его диверсификации и увеличения ликвидности инвестиционного 
+                            портфеля.
+                        </p>
+                    </div>
+                    <div class="directions__items">
+                        <div class="directions__item" style="background-color: #394FC2;">
+                            <svg class="background-figure">
+                                <use xlink:href="#direction-figure-1"></use>
+                            </svg>
+                            <div class="directions__item__content">
+                                <h3>Управление финансами</h3>
+                                <svg class="right-arrow">
+                                    <use xlink:href="#right-arrow-icon"></use>
+                                </svg>
+                                <hr>
+                                <p>
+                                    Составление финансового плана на срок от 1 месяца до 40 лет и 
+                                    подбор инструментов для формирования инвестиционного портфеля
+                                </p>
+                            </div>
+                        </div>
+                        <div class="directions__item" style="background-color: #2ABF6F">
+                            <svg class="background-figure">
+                                <use xlink:href="#direction-figure-2"></use>
+                            </svg>
+                            <div class="directions__item__content">
+                                <h3>технология работы с банковскими продуктами</h3>
+                                <svg class="right-arrow">
+                                    <use xlink:href="#right-arrow-icon"></use>
+                                </svg>
+                                <hr>
+                                <p>
+                                    Помогаем получить кредитные средства под самый низкий процент, 
+                                    скрытый в официальных банковских предложениях
+                                </p>
+                            </div>
+                        </div>
+                        <div class="directions__item" style="background-color: #FE4819">
+                            <svg class="background-figure">
+                                <use xlink:href="#direction-figure-3"></use>
+                            </svg>
+                            <div class="directions__item__content">
+                                <h3>Трансформационные игры</h3>
+                                <svg class="right-arrow">
+                                    <use xlink:href="#right-arrow-icon"></use>
+                                </svg>
+                                <hr>
+                                <p>
+                                    Трансформационные игры являются настоящим жизненным тренингом, который поможет 
+                                    вам определить свои истинные цели и проверить их на правильность и достижимость
+                                </p>
+                            </div>
+                        </div>
+                        <div class="directions__item" style="background-color: #2ABF6F;">
+                            <svg class="background-figure">
+                                <use xlink:href="#direction-figure-4"></use>
+                            </svg>
+                            <div class="directions__item__content">
+                                <h3>курс «я режисер богатой жизни»</h3>
+                                <svg class="right-arrow">
+                                    <use xlink:href="#right-arrow-icon"></use>
+                                </svg>
+                                <hr>
+                                <p>
+                                    Комплексная программа, которая включает в себя составление сценария жизни: проработка 
+                                    целей и финансовых стратегий. Подбор инвестиционного портфеля и его развитие.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         @@include('../parts/footer.html')
    </div>
+   <script src="assets/js/jquery-3.7.1.min.js"></script>
+   <script src="assets/js/aos.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/choices.min.js"></script>
+   <script src="assets/js/fancybox.umd.js"></script>
+   <script src="assets/js/video.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>

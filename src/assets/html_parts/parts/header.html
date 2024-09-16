@@ -1,21 +1,35 @@
-<header class="lock-padding">
+<header>
     <div class="container">
         <div class="logotype">
-            <picture>
-                <img src="assets/images/logotype.svg" alt="Логотип">
+            <picture class="logotype__first-part">
+                <img src="assets/images/logotype-first-part.svg">
             </picture>
-            <a href="#" class="absolute-link"></a>
+            <picture class="logotype__second-part">
+                <img src="assets/images/logotype-second-part.svg">
+            </picture>
+            <a href="index.html" class="absolute-link"></a>
         </div>
-        <div class="burger-menu">
-            <ul class="header-nav">
-                <li><a href="#researches" class="anchor">исследования</a></li>
-                <li><a href="#partner-projects" class="anchor">партнерские проекты</a></li>
-                <li><a href="#about-company" class="anchor">о компании</a></li>
-                <li><a href="#internships-events" class="anchor">стажировка и школы</a></li>
-            </ul>
-        </div>
-        <div class="burger-menu-button">
-            <span></span>
+        <div class="header__content">
+            <div class="burger-menu">
+                <ul class="header-nav">
+                    <li>
+                        <select name="finance-select" id="finance-select">
+                            <option value="">finance</option>
+                            <option value="Технология работы с банковскими продуктами">Технология работы с банковскими продуктами</option>
+                            <option value="Курс «Я режисер богатой жизни»">Курс «Я режисер богатой жизни»</option>
+                        </select>
+                    </li>
+                    <li><a href="game.html">GAME</a></li>
+                    <li><a href="invest.html">invest</a></li>
+                    <li><a href="about-us.html">О компании</a></li>
+                </ul>
+            </div>
+            <a href="#" class="main-button">Связаться</a>
+            <div class="burger-menu__button">
+                <div class="burger-menu__button__content">
+                    <span></span>
+                </div>
+            </div>
         </div>
     </div>
 </header>
