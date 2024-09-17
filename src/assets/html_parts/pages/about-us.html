@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
+    <title>О нас</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -11,19 +11,39 @@
    <div class="wrapper">
         @@include('../parts/header.html')
         <main>
-            <section class="information-section undefined-section">
+            <section class="about-us-section">
                 <div class="container">
-                    <div class="information-section__container">
-                        <picture class="background-picture">
-                            <source media="(min-width:761px)" srcset="assets/images/background-lines-2.svg">
-                            <img src="assets/images/background-lines-3.svg">
-                        </picture>
-                        <div class="information-section__content">
-                            <picture class="logotype">
-                                <img src="assets/images/logotype-first-part.svg">
+                    <div class="two-columns">
+                        <div class="two-columns__column">
+                            <div class="text-content">
+                                <h1>О нас</h1>
+                                <p>
+                                    Более 15 лет мы проводим профессиональные финансовые консультации и помогаем 
+                                    нашим клиентам создавать капитал даже без наличия личных средств.
+                                    <br>
+                                    <br>
+                                    Имея большой опыт консультирования, в финансовой сфере, в 2008 году во время 
+                                    кризиса мы разработали ряд программ основанных на глубоком знании работы банковских 
+                                    продуктов и аналитике инвестиционных направлений. Авторские методики позволили нашим 
+                                    клиентам не только сохранить свои деньги в сложное для рынка время, но и преумножить 
+                                    их.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="two-columns__column">
+                            <picture class="proportional-picture">
+                                <source srcset="assets/images/about-us.avif" type="image/avif">
+                                <source srcset="assets/images/about-us.webp" type="image/webp">
+                                <img src="assets/images/about-us.png" alt="Картинка">
                             </picture>
-                            <h1>404 - страница не <br>найдена</h1>
-                            <a href="index.html">вернуться на главную</a>
+                        </div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
