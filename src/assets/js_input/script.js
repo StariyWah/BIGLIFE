@@ -18,15 +18,13 @@ $(document).ready(function(){
                 $(parent).toggleClass('_active');
                 $(parent).children('.load-more__hidden-part').slideToggle(300);
                 if($(parent).hasClass('_active')){
-                    $(this).text(closeText);
-                    console.log(1);
+                    $(this).children('span').text(closeText);
                 } else {
-                    $(this).text(openText);
-                    console.log(openText);
+                    $(this).children('span').text(openText);
                 }
             }else{
                 if($(parent).hasClass('_active')){
-                    $(element).text(openText);
+                    $(element).children('span').text(openText);
                     $(parent).removeClass('_active');
                     $(parent).children('.load-more__hidden-part').slideToggle(300);
                 }
@@ -65,4 +63,25 @@ $(document).ready(function(){
             }
         }
     });
+    if(document.querySelectorAll('.swiper-persons').length > 0) {
+        let personsSlider = new Swiper('.swiper-persons .swiper', {
+            direction: 'horizontal',
+            spaceBetween: 16,
+            slidesPerView: 1,
+            navigation: {
+                prevEl: '.swiper-persons .swiper-button-prev',
+                nextEl: '.swiper-persons .swiper-button-next',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                },
+                1380: {
+                    slidesPerView: 1.38,
+                    spaceBetween: 16,
+                },
+            }
+        });
+    }
 });
