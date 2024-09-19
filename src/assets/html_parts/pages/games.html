@@ -11,6 +11,102 @@
    <div class="wrapper">
         @@include('../parts/header.html')
         <main>
+            <section class="games-banner-section">
+                <div class="container">
+                    <div class="container__content">
+                        <div class="two-columns">
+                            <div class="two-columns__column games-banner__content">
+                                <picture class="background-picture">
+                                    <source media="(min-width:1440px)" srcset="assets/images/background-figure-1.svg">
+                                    <source media="(min-width:701px)" srcset="assets/images/background-lines-4.svg">
+                                    <img src="assets/images/background-lines-3.svg">
+                                </picture>
+                                <h1>Трансформационные игры-тренинги</h1>
+                                <p class="games-banner__heading">
+                                    Это полноценные тренинги, направленные на развитие личности, приобретение 
+                                    навыков работы с финансами и поиск точек роста для бизнеса.
+                                </p>
+                            </div>
+                            <div class="two-columns__column games-banner__picture">
+                                <picture class="proportional-picture">
+                                    <source srcset="assets/images/games-banner.avif" type="image/avif">
+                                    <source srcset="assets/images/games-banner.webp" type="image/webp">
+                                    <img src="assets/images/games-banner.png" alt="Картинка">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="games-tabulation-section">
+                <div class="container__content">
+                    <div class="container">
+                        <h2>Выберите свой путь</h2>
+                        <div class="tabulation" data-tabs>
+                                <div class="tabulation__navigation" data-triggers>
+                                    <a data-link href="#dream" class="tabulation__navigation__item">
+                                        Трансформационная игра-тренинг «Путь к мечте»
+                                        <svg>
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <a data-link href="#professional" class="tabulation__navigation__item">
+                                        Трансформационная бизнес-игра «Путь профи»
+                                        <svg>
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                    </a>
+                                    <a data-link href="#leader" class="tabulation__navigation__item">
+                                        Трансформационная игра-тренинг «Путь лидера»
+                                        <svg>
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="tabilation__items" data-body>
+                                    <div class="tabilation__items__item" data-id="#dream">
+                                        <div class="transformational-game">
+                                            <div class="transformational-game__heading">
+                                                <span class="h3">Трансформационная игра-тренинг</span>
+                                                <h1>Путь к мечте</h1>
+                                                <a href="#" class="main-button button_red">Приобрести</a>
+                                            </div>
+                                            <div class="transformational-game__description text-content">
+                                                <p>
+                                                    Главная задача игры — помочь найти и сконцентрировать свои ресурсы, таланты, 
+                                                    возможности, предназначение чтобы как можно быстрее и качественнее реализовать 
+                                                    свои мечты и цели в жизни
+                                                </p>
+                                            </div>
+                                            <ol class="transformational-game__tasks">
+                                                <li>Истинные цели</li>
+                                                <li>Новый уровень идей и ресурсов</li>
+                                                <li>Зеркало вашей жизни</li>
+                                            </ol>
+                                            <a href="#" class="main-button button_red">Приобрести</a>
+                                            <div class="video__item">
+                                                <picture class="proportional-picture">
+                                                    <source srcset="assets/images/video-game-1.avif" type="image/avif">
+                                                    <source srcset="assets/images/video-game-1.webp" type="image/webp">
+                                                    <img src="assets/images/video-game-1.png" alt="Картинка">
+                                                </picture>
+                                                <div class="video__play">
+                                                    <svg>
+                                                        <use xlink:href="#video-play-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="video__content">
+                                                </div>
+                                                <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="video-feedback-section">
                 <div class="container">
                     <div class="container__content">

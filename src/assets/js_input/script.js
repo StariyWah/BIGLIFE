@@ -2,6 +2,20 @@ $(document).ready(function(){
     AOS.init({
         once: true,
     });
+    function toggleBurger() {
+        $('body').toggleClass('_lock');
+        $('.burger-menu__button').toggleClass('_active');
+        $('header').toggleClass('_active');
+        $('.burger-menu').toggleClass('_active'); 
+    }
+    $('.burger-menu__button').click(function(e){
+        toggleBurger();
+    });
+    $('.burger-menu').click(function(e){
+        if(!e.target.closest('.header-nav')) {
+            toggleBurger();
+        }
+    });
     let financeSelectOrigin = document.querySelector('[name="finance-select"]');
     if(financeSelectOrigin !== null && financeSelectOrigin !== undefined) {
         let financeSelect = new Choices(financeSelectOrigin, {
@@ -87,6 +101,31 @@ $(document).ready(function(){
             }
         });
     }
+    if(document.querySelectorAll('.swiper-invest-directions').length > 0) {
+        let investDirectionsSlider = new Swiper('.swiper-invest-directions .swiper', {
+            direction: 'horizontal',
+            spaceBetween: 16,
+            slidesPerView: 2,
+            navigation: {
+                prevEl: '.swiper-invest-directions .swiper-button-prev',
+                nextEl: '.swiper-invest-directions .swiper-button-next',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                701: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1100: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
+            }
+        });
+    }
     if(document.querySelectorAll('.swiper-tariffs').length > 0) {
         let tariffsSlider = new Swiper('.swiper-tariffs .swiper', {
             direction: 'horizontal',
@@ -152,6 +191,21 @@ $(document).ready(function(){
                 maxWidth: 360,
                 interactive: true,
             });
+        });
+    }
+    const headerTooltip = document.getElementById('header-tooltip');
+    if(headerTooltip !== null && headerTooltip !== undefined) {
+        tippy(headerTooltip, {
+            content: headerTooltip.querySelector('.header__tooltip__content').innerHTML,
+            allowHTML: true,
+            arrow: false,
+            placement: 'bottom-start',
+            offset: [0, 0],
+            zIndex: 9999,
+            trigger: 'click',
+            theme: $(headerTooltip).attr('data-theme'),
+            maxWidth: 327,
+            interactive: true,
         });
     }
     Fancybox.bind('[data-fancybox]', {
