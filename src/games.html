@@ -23,37 +23,40 @@
         <div class="header__content">
             <div class="burger-menu">
                 <div class="burger-menu__content">
-                    <ul class="header-nav">
-                        <li>
-                            <div class="header__tooltip" id="header-tooltip" data-theme="header-tooltip">
-                                <div class="header__tooltip__button">
-                                    <span>finance</span>
-                                    <svg>
-                                        <use xlink:href="#slider-prev-icon"></use>
-                                    </svg>
-                                </div>
-                                <div class="header__tooltip__content">
-                                    <ul class="header__tooltip__list">
-                                        <li><a href="#">Технология работы с банковскими продуктами</a></li>
-                                        <li><a href="#">Курс «Я режисер богатой жизни»</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="game.html">GAME</a></li>
-                        <li><a href="invest.html">invest</a></li>
-                        <li><a href="about-us.html">О компании</a></li>
-                        <li>
-                            <a href="#" class="profile-icon">
+                    <div class="header-nav__container">
+                        <div class="header__tooltip" id="header-tooltip" data-theme="header-tooltip">
+                            <div class="header__tooltip__button">
+                                <span>finance</span>
                                 <svg>
-                                    <use xlink:href="#profile-icon"></use>
+                                    <use xlink:href="#slider-prev-icon"></use>
                                 </svg>
-                            </a>
-                        </li>
-                    </ul>
+                            </div>
+                            <div class="header__tooltip__content">
+                                <ul class="header__tooltip__list">
+                                    <li><a href="#">Технология работы с банковскими продуктами</a></li>
+                                    <li><a href="#">Курс «Я режисер богатой жизни»</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="header-nav">
+                            <li><a href="game.html">GAME</a></li>
+                            <li><a href="invest.html">invest</a></li>
+                            <li><a href="about-us.html">О компании</a></li>
+                        </ul>
+                        <a href="#" class="profile-icon">
+                            <svg>
+                                <use xlink:href="#profile-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             <a href="#" class="main-button">Связаться</a>
+            <a href="#" class="profile-icon">
+                <svg>
+                    <use xlink:href="#profile-icon"></use>
+                </svg>
+            </a>
             <div class="burger-menu__button">
                 <div class="burger-menu__button__content">
                     <span></span>
@@ -515,7 +518,7 @@
             </div>
             <div class="footer__items__item footer_consultation">
                 <form action="#">
-                    <h2>Записаться на консультацию</h2>
+                    <p class="h2">Записаться на консультацию</p>
                     <div class="input__container">
                         <input type="text" name="consultation-input" id="consultation-name" placeholder="Ваше имя">
                     </div>
@@ -529,8 +532,8 @@
                         </svg>
                     </button>
                     <div class="privacy-policy checkbox__container">
-                        <input type="checkbox" name="privacy-policy-agree" id="privacy-policy-agree" required>
-                        <label for="privacy-policy-agree">
+                        <input type="checkbox" name="consultation-agree" id="consultation-agree" required>
+                        <label for="consultation-agree">
                             <p>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></p>
                         </label>
                     </div>

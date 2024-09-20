@@ -3,7 +3,7 @@ $(document).ready(function(){
         once: true,
     });
     function toggleBurger() {
-        $('body').toggleClass('_lock');
+        $('body').toggleClass('_header-lock');
         $('.burger-menu__button').toggleClass('_active');
         $('header').toggleClass('_active');
         $('.burger-menu').toggleClass('_active'); 
@@ -12,7 +12,7 @@ $(document).ready(function(){
         toggleBurger();
     });
     $('.burger-menu').click(function(e){
-        if(!e.target.closest('.header-nav')) {
+        if(!e.target.closest('.header-nav__container')) {
             toggleBurger();
         }
     });
