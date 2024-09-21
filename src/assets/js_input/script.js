@@ -176,6 +176,31 @@ $(document).ready(function(){
             },
         });
     }
+    if(document.querySelectorAll('.swiper-partners').length > 0) {
+        let patnersSlider = new Swiper('.swiper-partners .swiper', {
+            direction: 'horizontal',
+            spaceBetween: 16,
+            slidesPerView: 2.1,
+            navigation: {
+                prevEl: '.swiper-partners .swiper-button-prev',
+                nextEl: '.swiper-partners .swiper-button-next',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                701: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1380: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 16,
+                },
+            },
+        });
+    }
     const informationButtons = document.querySelectorAll('#information-button');
     if(informationButtons.length > 0) {
         informationButtons.forEach(button => {
@@ -210,29 +235,36 @@ $(document).ready(function(){
     }
     Fancybox.bind('[data-fancybox]', {
     });
-    let directionItems = document.querySelectorAll('.directions__item');
-    if(directionItems.length > 0) {
-        let directionClick = $(document).on('click', '.directions__item', function(e) {
-            if (window.innerWidth < 1380) {
-                directionItems.forEach(element => {
-                    if(element === this) {
-                        $(element).toggleClass('_active');
-                    } else {
-                        $(element).removeClass('_active');
-                    }
-                });
-            }
-        });
-        $('.directions__item').hover(function(e) {
-            if (window.innerWidth >= 1380) {
-                directionItems.forEach(element => {
-                    if(element === this) {
-                        $(element).toggleClass('_active');
-                    } else {
-                        $(element).removeClass('_active');
-                    }
-                });
-            }
-        });
+    function itemsHoverClickAnimation(items, itemClass) {
+        if(items.length > 0) {
+            $(document).on('click', itemClass, function(e) {
+                if (window.innerWidth < 1380) {
+                    items.forEach(element => {
+                        if(element === this) {
+                            $(element).toggleClass('_active');
+                        } else {
+                            $(element).removeClass('_active');
+                        }
+                    });
+                }
+            });
+            $(itemClass).hover(function(e) {
+                if (window.innerWidth >= 1380) {
+                    items.forEach(element => {
+                        if(element === this) {
+                            $(element).toggleClass('_active');
+                        } else {
+                            $(element).removeClass('_active');
+                        }
+                    });
+                }
+            });
+        }
     }
+    let directionItems = document.querySelectorAll('.directions__item');
+    itemsHoverClickAnimation(directionItems, '.directions__item');
+    let howWorksItems = document.querySelectorAll('.how-works__items__item');
+    itemsHoverClickAnimation(howWorksItems, '.how-works__items__item.item_animated');
+    let forWhomItems = document.querySelectorAll('.for-whom__items__item');
+    itemsHoverClickAnimation(forWhomItems, '.for-whom__items__item.item_animated');
 });
