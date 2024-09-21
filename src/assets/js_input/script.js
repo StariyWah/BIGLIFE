@@ -267,4 +267,6 @@ $(document).ready(function(){
     itemsHoverClickAnimation(howWorksItems, '.how-works__items__item.item_animated');
     let forWhomItems = document.querySelectorAll('.for-whom__items__item');
     itemsHoverClickAnimation(forWhomItems, '.for-whom__items__item.item_animated');
+    let willLearnItems = document.querySelectorAll('.will-learn__items__item');
+    itemsHoverClickAnimation(willLearnItems, '.will-learn__items__item');
 });
