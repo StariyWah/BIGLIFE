@@ -82,12 +82,38 @@
                     </div>
                     <div class="main-banner-section__buttons">
                         <a href="#" class="main-button _contour">Направления развития</a>
-                        <a href="#" class="main-button">
+                        <a href="#consultation" data-fancybox class="main-button">
                             Получить консультацию
                             <svg>
                                 <use xlink:href="#right-arrow-icon"></use>
                             </svg>
                         </a>
+                        <div id="consultation" class="fancy__form" style="display: none;">
+                            <form action="#">
+                                <h2>Записаться на консультацию</h2>
+                                <div class="input__container">
+                                    <input type="text" name="make-input" id="make-name" placeholder="Ваше имя">
+                                </div>
+                                <div class="input__container">
+                                    <input type="text" name="make-input" id="make-telegram" placeholder="Ваш телеграм">
+                                </div>
+                                <button type="submit">
+                                    Записаться
+                                    <svg>
+                                        <use xlink:href="#right-arrow-icon"></use>
+                                    </svg>
+                                </button>
+                                <div class="privacy-policy checkbox__container">
+                                    <input type="checkbox" name="privacy-policy-agree" id="fancy-consultation-agree" required>
+                                    <label for="fancy-consultation-agree">
+                                        <span class="checkbox-icon">
+
+                                        </span>
+                                        <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -185,12 +211,12 @@
                                 портфеля.
                             </p>
                         </div>
-                        <div class="directions__items" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
+                        <div class="directions__items custom-list" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
                             <div class="directions__item item_blue">
                                 <svg class="background-figure">
                                     <use xlink:href="#direction-figure-1"></use>
                                 </svg>
-                                <div class="directions__item__content">
+                                <div class="directions__item__content custom-list__item">
                                     <h3>Управление финансами</h3>
                                     <svg class="right-arrow">
                                         <use xlink:href="#right-arrow-icon"></use>
@@ -210,7 +236,7 @@
                                 <svg class="background-figure">
                                     <use xlink:href="#direction-figure-2"></use>
                                 </svg>
-                                <div class="directions__item__content">
+                                <div class="directions__item__content custom-list__item">
                                     <h3>технология работы с банковскими продуктами</h3>
                                     <svg class="right-arrow">
                                         <use xlink:href="#right-arrow-icon"></use>
@@ -230,7 +256,7 @@
                                 <svg class="background-figure">
                                     <use xlink:href="#direction-figure-3"></use>
                                 </svg>
-                                <div class="directions__item__content">
+                                <div class="directions__item__content custom-list__item">
                                     <h3>Трансформационные игры</h3>
                                     <svg class="right-arrow">
                                         <use xlink:href="#right-arrow-icon"></use>
@@ -250,7 +276,7 @@
                                 <svg class="background-figure">
                                     <use xlink:href="#direction-figure-4"></use>
                                 </svg>
-                                <div class="directions__item__content">
+                                <div class="directions__item__content custom-list__item">
                                     <h3>курс «я режисер богатой жизни»</h3>
                                     <svg class="right-arrow">
                                         <use xlink:href="#right-arrow-icon"></use>
@@ -374,36 +400,36 @@
                     <div class="container__content">
                         <div class="faq__content">
                             <h2>Часто задаваемые вопросы</h2>
-                            <div class="faq__items" data-theme="black">
-                                <div class="faq__items__item">
+                            <div class="faq__items custom-list" data-theme="black">
+                                <div class="faq__items__item custom-list__item">
                                     <p class="item__heading">Lorem ipsum dolor sit amet consectetur?</p>
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
                                     </svg>
                                     <a href="#" class="absolute-link"></a>
                                 </div>
-                                <div class="faq__items__item">
+                                <div class="faq__items__item custom-list__item">
                                     <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
                                     </svg>
                                     <a href="#" class="absolute-link"></a>
                                 </div>
-                                <div class="faq__items__item">
+                                <div class="faq__items__item custom-list__item">
                                     <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
                                     </svg>
                                     <a href="#" class="absolute-link"></a>
                                 </div>
-                                <div class="faq__items__item">
+                                <div class="faq__items__item custom-list__item">
                                     <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
                                     </svg>
                                     <a href="#" class="absolute-link"></a>
                                 </div>
-                                <div class="faq__items__item">
+                                <div class="faq__items__item custom-list__item">
                                     <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
@@ -462,53 +488,58 @@
                                         <div class="privacy-policy checkbox__container">
                                             <input type="checkbox" name="privacy-policy-agree" id="privacy-policy-agree" required>
                                             <label for="privacy-policy-agree">
-                                                <p>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></p>
+                                                <span class="checkbox-icon">
+                                                    
+                                                </span>
+                                                <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
                                             </label>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="two-columns__column" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0">
-                                <div class="subscription-dignities__items">
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                            <img src="assets/images/plus-icon.svg">
-                                        </picture>
-                                        <p>
-                                            Мини-книжка «10 ошибок сценария жизни»
-                                        </p>
-                                    </div>
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                                                <img src="assets/images/plus-icon.svg">
-                                                            </picture>
-                                        <p>
-                                            Гайд «Миллион желаний»
-                                        </p>
-                                    </div>
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                            <img src="assets/images/plus-icon.svg">
-                                        </picture>
-                                        <p>
-                                            Гайд «Секреты банков»
-                                        </p>
-                                    </div>
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                            <img src="assets/images/plus-icon.svg">
-                                        </picture>
-                                        <p>
-                                            Гайд «Семейный бюджет»
-                                        </p>
-                                    </div>
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                            <img src="assets/images/plus-icon.svg">
-                                        </picture>
-                                        <p>
-                                            Гайд «Уменьшение долгов»
-                                        </p>
+                                <div class="subscription-dignities__items__wrapper">
+                                    <div class="subscription-dignities__items">
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Мини-книжка «10 ошибок сценария жизни»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Гайд «Миллион желаний»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Гайд «Секреты банков»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Гайд «Семейный бюджет»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Гайд «Уменьшение долгов»
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -579,7 +610,10 @@
                     <div class="privacy-policy checkbox__container">
                         <input type="checkbox" name="consultation-agree" id="consultation-agree" required>
                         <label for="consultation-agree">
-                            <p>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></p>
+                            <span class="checkbox-icon">
+                                                    
+                            </span>
+                            <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
                         </label>
                     </div>
                 </form>

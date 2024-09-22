@@ -59,7 +59,7 @@
             <section class="invest-directions-section">
                 <div class="container">
                     <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
-                        <div class="swiper-container swiper-invest-directions">
+                        <div class="swiper-container swiper-invest-directions custom-list">
                             <div class="section__heading" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                                 <h2>Направления</h2>
                                 <div class="swiper-navigation">
@@ -80,7 +80,7 @@
                                     <div class="swiper-slide">
                                         <div class="invest-directions__item">
                                             <div class="invest-directions__item__container">
-                                                <div class="invest-directions__item__content">
+                                                <div class="invest-directions__item__content custom-list__item">
                                                     <h3>Составление финансовых планов</h3>
                                                     <div class="text-content">
                                                         <b>Помогаем реализовать ваши финансовые мечты</b>. Благодаря нашей 
@@ -101,7 +101,7 @@
                                     <div class="swiper-slide">
                                         <div class="invest-directions__item">
                                             <div class="invest-directions__item__container">
-                                                <div class="invest-directions__item__content">
+                                                <div class="invest-directions__item__content custom-list__item">
                                                     <h3>Составление инвестиционного портфеля</h3>
                                                     <div class="text-content">
                                                         <b>Ваше финансовое развитие – наш приоритет</b>. Помогаем создавать инвестиционные 
@@ -174,6 +174,92 @@
                                 <ul>
                                     <li>Алгоритмический трейдинг</li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscription-section make-appointment">
+                <div class="container">
+                    <div class="container__content">
+                        <div class="two-columns">
+                            <div class="two-columns__column" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
+                                <div class="subscription-dignities__items__wrapper">
+                                    <h3>На бесплатной диагностической консультации вы получите быстрое решение вашего вопроса:</h3>
+                                    <div class="subscription-dignities__items">
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Как снизить кредитную нагрузку
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Как понять сколько зарабатываем и куда уходят деньги
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Как увеличить доход
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Как начать понимать в инвестициях
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Как создать пассивный доход
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="two-columns__column" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0">
+                                <div class="subscription-form__container">
+                                    <picture class="background-picture">
+                                        <img src="assets/images/background-lines-4.svg">
+                                    </picture>
+                                    <form action="#">
+                                        <h2>Записаться на консультацию</h2>
+                                        <div class="input__container">
+                                            <input type="text" name="make-input" id="make-name" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="input__container">
+                                            <input type="text" name="make-input" id="make-telegram" placeholder="Ваш телеграм">
+                                        </div>
+                                        <button type="submit">
+                                            Записаться
+                                            <svg>
+                                                <use xlink:href="#right-arrow-icon"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="privacy-policy checkbox__container">
+                                            <input type="checkbox" name="privacy-policy-agree" id="make-appointment-agree" required>
+                                            <label for="make-appointment-agree">
+                                                <span class="checkbox-icon">
+
+                                                </span>
+                                                <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -272,53 +358,58 @@
                                         <div class="privacy-policy checkbox__container">
                                             <input type="checkbox" name="privacy-policy-agree" id="privacy-policy-agree" required>
                                             <label for="privacy-policy-agree">
-                                                <p>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></p>
+                                                <span class="checkbox-icon">
+                                                    
+                                                </span>
+                                                <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
                                             </label>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="two-columns__column" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0">
-                                <div class="subscription-dignities__items">
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                            <img src="assets/images/plus-icon.svg">
-                                        </picture>
-                                        <p>
-                                            Мини-книжка «10 ошибок сценария жизни»
-                                        </p>
-                                    </div>
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                                                <img src="assets/images/plus-icon.svg">
-                                                            </picture>
-                                        <p>
-                                            Гайд «Миллион желаний»
-                                        </p>
-                                    </div>
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                            <img src="assets/images/plus-icon.svg">
-                                        </picture>
-                                        <p>
-                                            Гайд «Секреты банков»
-                                        </p>
-                                    </div>
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                            <img src="assets/images/plus-icon.svg">
-                                        </picture>
-                                        <p>
-                                            Гайд «Семейный бюджет»
-                                        </p>
-                                    </div>
-                                    <div class="subscription-dignities__item">
-                                        <picture class="icon-plus">
-                                            <img src="assets/images/plus-icon.svg">
-                                        </picture>
-                                        <p>
-                                            Гайд «Уменьшение долгов»
-                                        </p>
+                                <div class="subscription-dignities__items__wrapper">
+                                    <div class="subscription-dignities__items">
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Мини-книжка «10 ошибок сценария жизни»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Гайд «Миллион желаний»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Гайд «Секреты банков»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Гайд «Семейный бюджет»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg">
+                                            </picture>
+                                            <p>
+                                                Гайд «Уменьшение долгов»
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
