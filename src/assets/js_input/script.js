@@ -2,6 +2,7 @@ $(document).ready(function(){
     AOS.init({
         once: true,
     });
+    useDynamicAdapt();
     function toggleBurger() {
         $('body').toggleClass('_header-lock');
         $('.burger-menu__button').toggleClass('_active');
@@ -269,4 +270,6 @@ $(document).ready(function(){
     itemsHoverClickAnimation(forWhomItems, '.for-whom__items__item.item_animated');
     let willLearnItems = document.querySelectorAll('.will-learn__items__item');
     itemsHoverClickAnimation(willLearnItems, '.will-learn__items__item');
+    let gamesInformationItems = document.querySelectorAll('.games-information__items__item');
+    itemsHoverClickAnimation(gamesInformationItems, '.games-information__items__item');
 });

@@ -563,7 +563,8 @@ body {
         & .finance-directions__items__item,
         & .how-works__items__item,
         & .technology-banner__items__item.item_heading,
-        & .for-whom__items__item
+        & .for-whom__items__item,
+        & .course-banner__items__item
         {
             border-radius: var(--border-radius--main);
             border: var(--border--main) solid var(--color--dark-gray-border);
@@ -575,7 +576,8 @@ body {
         & footer .footer_consultation form,
         & .partner,
         & .technology-advantages__items__item,
-        & .will-learn__items__item
+        & .will-learn__items__item,
+        & .games-information__items__item
         {
             border-radius: var(--border-radius--main);
             border: var(--border--main) solid var(--color--light-gray-border);
@@ -817,9 +819,6 @@ body {
                 display: flex;
                 align-items: center;
                 gap: 0 16px;
-                & > .profile-icon {
-                    display: none;
-                }
             }
             & .main-button {
                 font-weight: 400;
@@ -1737,7 +1736,8 @@ body {
         & .finance-directions-section,
         & .how-works-section,
         & .technology-banner-section,
-        & .course-for-whom-section {
+        & .course-for-whom-section,
+        & .course-banner-section {
             color: var(--color--white);
             & .load-more {
                 &._active {
@@ -3168,7 +3168,6 @@ body {
                     & .item__hidden-text {
                         grid-template-rows: 1fr;
                         transition: all var(--transition--main);
-                        transition: height 0.3s ease 0.3s;
                     }
                     & .item__content {
                         align-items: flex-start;
@@ -3232,6 +3231,187 @@ body {
                     overflow: hidden;
                     color: var(--color--white);
                 }
+            }
+        }
+        & .course-banner-section {
+            & .container {
+                padding: 0 var(--padding--section) var(--padding--60px) var(--padding--section);
+            }
+        }
+        & .course-banner__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            & > * {
+                grid-column: 1/3;
+            }
+            & > ol {
+                padding: 31px 15px;
+                background-color: var(--color--black-second);
+                border: var(--border--main) solid var(--color--dark-gray-border);
+                border-radius: var(--border-radius--main);
+                grid-row: 3/4;
+            }
+            & ol {
+                counter-reset: technology-list 0;
+                display: flex;
+                flex-direction: column;
+                &, & li {
+                    list-style: none;
+                    font-size: var(--font-size--small);
+                    line-height: 133%;
+                    margin-bottom: 16px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                & li {
+                    display: inline-flex;
+                    gap: 0 8px;
+                    align-items: start;
+                    &::before {
+                        font-weight: 600;
+                        line-height: 133%;
+                        color: var(--color--green);
+                        font-size: var(--font-size--small);
+                        text-transform: uppercase;
+                        content: counter(technology-list, decimal-leading-zero)".";
+                        counter-increment: technology-list 1;
+                        min-width: 32px;
+                    }
+                }
+            }
+            & .course-banner__items__item {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                & > *:not(.background-picture) {
+                    position: relative;
+                }
+                &.heading_item {
+                    padding: 31px 15px;
+                    & > *:last-child {
+                        margin-bottom: 0;
+                    }
+                    & h1, & .h1 {
+                        margin-bottom: 16px;
+                        line-height: 133%;
+                    }
+                    & h3, & .h3 {
+                        font-size: var(--font-size--h2);
+                        line-height: 133%;
+                    }
+                }
+                &.application_item {
+                    background-color: transparent;
+                    border: none;
+                    & h2, & .h2 {
+                        display: none;
+                    }
+                    & .banner__buttons {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                }
+                &.picture_item {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    border: none;
+                    & .proportional-picture {
+                        padding-top: 100%;
+                    }
+                }
+                &.information_item {
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    border-radius: var(--border-radius--main);
+                    color: var(--color--white);
+                    background-color: var(--color--green);
+                    padding: 16px;
+                    & h1, & .h1 {
+                        font-size: var(--font-size--h1);
+                        line-height: 106%;
+                        margin-bottom: auto;
+                    }
+                    & .information_item__heading {
+                        text-transform: uppercase;
+                        line-height: 133%;
+                        font-size: var(--font-size--small);
+                        font-weight: 600;
+                        margin: 8px 0;
+                    }
+                    & .information_item__description {
+                        font-size: var(--font-size--special);
+                        line-height: 160%;
+                    }
+                }
+            }
+        }
+        & .games-information__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 64px;
+            & .games-information__items__item {
+                transition: all var(--transition--main);
+                cursor: pointer;
+                &._active {
+                    background-color: var(--color--red);
+                    color: var(--color--white);
+                    & .item__description {
+                        display: none;
+                    }
+                    & .item__content {
+                        & svg {
+                            display: none;
+                            fill: var(--color--white);
+                        }
+                    }
+                    & .item__hidden-text {
+                        grid-template-rows: 1fr;
+                        transition: all var(--transition--main);
+                    }
+                }
+                & .item__container, & .item__content, & .content__wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                }
+                & .content__wrapper {
+                    
+                }
+                & .item__content {
+                    padding: 16px;
+                    & svg {
+                        max-width: 24px;
+                        min-width: 24px;
+                        width: 100%;
+                        height: 24px;
+                        fill: var(--color--red);
+                        margin-bottom: 9px;
+                    }
+                }
+                & .item__hidden-text {
+                    display: grid;
+                    grid-template-rows: 0fr;
+                    transition: height 0.3s ease 0.3s;
+                }
+                & .item__description {
+                    line-height: 160%;
+                    font-size: var(--font-size--special);
+                    min-height: 8em;
+                    margin-top: auto;
+                }
+                & .item__hidden-text__content {
+                    overflow: hidden;
+                    color: var(--color--white);
+                    line-height: 160%;
+                    font-size: var(--font-size--special);
+                }
+            }
+            &[data-type="2"] {
+                
             }
         }
         & section {
@@ -3307,9 +3487,6 @@ body {
             & header {
                 & .header__content {
                     gap: 0 20px;
-                    & > .profile-icon {
-                        display: flex;
-                    }
                 }
                 & .main-button {
                     font-weight: 400;
@@ -3347,9 +3524,6 @@ body {
                     & .header__tooltip {
                         align-self: center;
                         margin: -12px -13px 48px -13px;
-                    }
-                    & .profile-icon {
-                        display: none;
                     }
                     & .header-nav {
                         & li, & a {
@@ -4759,6 +4933,117 @@ body {
                     }
                 }
             }
+            & .course-banner-section {
+                & .container {
+                }
+            }
+            & .course-banner__items {
+                gap: 20px;
+                & ol {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 16px;
+                    &, & li {
+                        font-size: var(--font-size--regular);
+                        line-height: 150%;
+                        margin-bottom: 0;
+                    }
+                    & li {
+                        max-width: 300px;
+                        width: 100%;
+                        gap: 0 16px;
+                        &::before {
+                            font-size: var(--font-size--special);
+                        }
+                    }
+                }
+                & .course-banner__items__item {
+                    &.heading_item {
+                        padding: 39px 31px;
+                        & h1, & .h1 {
+                            margin-bottom: 24px;
+                            font-size: var(--font-size--banner--regular);
+                            line-height: 114%;
+                        }
+                        & h3, & .h3 {
+                            margin-bottom: 24px;
+                            font-size: var(--font-size--h3);
+                        }
+                    }
+                    &.application_item {
+                        background-color: var(--color--black-second);
+                        border: var(--border--main) solid var(--color--dark-gray-border);
+                        padding: 39px 31px;
+                        & h2, & .h2 {
+                            display: block;
+                            font-size: var(--font-size--h3);
+                            line-height: 133%;
+                            margin-bottom: 32px;
+                        }
+                        & .banner__buttons {
+                            flex-direction: row;
+                            gap: 20px;
+                        }
+                    }
+                    &.picture_item {
+                    }
+                    &.information_item {
+                        padding: 31px 39px;
+                        & h1, & .h1 {
+                        }
+                        & .information_item__heading {
+                            line-height: 133%;
+                            font-size: var(--font-size--special);
+                            margin: 8px 0 16px 0;
+                        }
+                        & .information_item__description {
+                            font-size: var(--font-size--regular);
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+            & .games-information__items {
+                gap: 20px;
+                margin-bottom: 144px;
+                & .games-information__items__item {
+                    &._active {
+                        & .item__description {
+                        }
+                        & .item__content {
+                            & svg {
+                                display: block;
+                            }
+                        }
+                        & .item__hidden-text {
+                        }
+                    }
+                    & .item__container, & .item__content, & .content__wrapper {
+                    }
+                    & .content__wrapper {
+                        
+                    }
+                    & .item__content {
+                        padding: 39px 31px;
+                        & svg {
+                            max-width: 46px;
+                            min-width: 46px;
+                            height: 46px;
+                        }
+                    }
+                    & .item__hidden-text {
+                    }
+                    & .item__description {
+                        line-height: 150%;
+                        font-size: var(--font-size--regular);
+                        min-height: initial;
+                    }
+                    & .item__hidden-text__content {
+                        line-height: 150%;
+                        font-size: var(--font-size--regular);
+                    }
+                }
+            }
             & section {
                 & .section__description {
                     & h2, & .h2, & h1, & .h1 {
@@ -6100,6 +6385,101 @@ body {
                         
                     }
                     & .item__heading, & .item__hidden-text__content {
+                    }
+                    & .item__hidden-text__content {
+                    }
+                }
+            }
+            & .course-banner-section {
+                & .container {
+                    padding: 0 var(--padding--section) 70px var(--padding--section);
+                }
+            }
+            & .course-banner__items {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 16px;
+                & > * {
+                    grid-column: 1/5;
+                }
+                & ol {
+                    grid-template-columns: 1fr;
+                    gap: 8px;
+                    &, & li {
+                    }
+                    & li {
+                        max-width: initial;
+                    }
+                }
+                & .course-banner__items__item {
+                    &.heading_item {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 0 48px;
+                        & h1, & .h1 {
+                            margin-bottom: 0;
+                            font-size: var(--font-size--banner--regular);
+                            line-height: 106%;
+                        }
+                        & h3, & .h3 {
+                            margin-bottom: 16px;
+                        }
+                    }
+                    &.application_item {
+                        grid-column: 1/3;
+                        grid-row: 2/3;
+                        justify-content: center;
+                        & h2, & .h2 {
+                            font-size: var(--font-size--h2);
+                            margin-bottom: 40px;
+                        }
+                        & .banner__buttons {
+                            gap: 16px;
+                        }
+                    }
+                    &.picture_item {
+                        grid-column: 3/4;
+                        grid-row: 2/3;
+                    }
+                    &.information_item {
+                        grid-column: 4/5;
+                        grid-row: 2/3;
+                        & h1, & .h1 {
+                        }
+                        & .information_item__heading {
+                        }
+                        & .information_item__description {
+                        }
+                    }
+                }
+            }
+            & .games-information__items {
+                gap: 16px;
+                margin-bottom: 72px;
+                grid-template-columns: repeat(4, 1fr);
+                & .games-information__items__item {
+                    &._active {
+                        & .item__description {
+                        }
+                        & .item__content {
+                            & svg {
+                            }
+                        }
+                        & .item__hidden-text {
+                        }
+                    }
+                    & .item__container, & .item__content, & .content__wrapper {
+                    }
+                    & .content__wrapper {
+                        
+                    }
+                    & .item__content {
+                        & svg {
+                        }
+                    }
+                    & .item__hidden-text {
+                    }
+                    & .item__description {
+                        min-height: 6em;
                     }
                     & .item__hidden-text__content {
                     }

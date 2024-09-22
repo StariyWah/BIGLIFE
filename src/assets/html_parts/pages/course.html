@@ -11,6 +11,57 @@
    <div class="wrapper">
         @@include('../parts/header.html')
         <main>
+            <section class="course-banner-section">
+                <div class="container">
+                    <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
+                        <div class="course-banner__items">
+                            <div class="course-banner__items__item heading_item">
+                                <picture class="background-picture">
+                                    <source media="(min-width:1440px)" srcset="assets/images/background-lines-2.svg">
+                                    <source media="(min-width:701px)" srcset="assets/images/background-lines-4.svg">
+                                    <img src="assets/images/background-lines-3.svg">
+                                </picture>
+                                <h1>Курс «Я режисер богатой жизни»</h1>
+                                <div class="item__content">
+                                    <h3>Научитесь управлять своей жизнью через управление финансами и построение личного капитала!</h3>
+                                    <ol data-da=".course-banner__items,700,last">
+                                        <li>Осознание и постановка целей </li>
+                                        <li>Повышение личного дохода</li>
+                                        <li>Навыки коммуникаций и создания нового окружения </li>
+                                        <li>Пассивное и активное инвестирование </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="course-banner__items__item application_item">
+                                <h2>Повышайте свой уровень жизни и достигайте поставленных целей в разы быстрее!</h2>
+                                <div class="banner__buttons">
+                                    <a href="#" class="main-button _contour">Посмотреть тарифы</a>
+                                    <a href="#" class="main-button">
+                                        Получить консультацию
+                                        <svg>
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-banner__items__item picture_item">
+                                <picture class="proportional-picture">
+                                    <source srcset="assets/images/course-banner.avif" type="image/avif">
+                                    <source srcset="assets/images/course-banner.webp" type="image/webp">
+                                    <img src="assets/images/course-banner.png" alt="Картинка">
+                                </picture>
+                            </div>
+                            <div class="course-banner__items__item information_item">
+                                <span class="h1">200+</span>
+                                <span class="information_item__heading">Учеников</span>
+                                <p class="information_item__description">
+                                    добились результатов нашей системе
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="will-learn-section">
                 <div class="container">
                     <div class="container__content">
@@ -1068,6 +1119,7 @@
         @@include('../parts/footer.html')
    </div>
    <script src="assets/js/jquery-3.7.1.min.js"></script>
+   <script src="assets/js/dynamicAdapt.js"></script>
    <script src="assets/js/aos.js"></script>
    <script src="assets/js/swiper-bundle.min.js"></script>
    <script src="assets/js/choices.min.js"></script>

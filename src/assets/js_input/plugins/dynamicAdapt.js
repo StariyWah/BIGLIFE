@@ -17,7 +17,7 @@
 /**
  * @param {'min' | 'max'} type
  */
-export function useDynamicAdapt(type = 'max') {
+function useDynamicAdapt(type = 'max') {
   const className = '_dynamic_adapt_'
   const attrName = 'data-da'
 
