@@ -19,7 +19,7 @@
                                 <picture class="background-picture">
                                     <source media="(min-width:1440px)" srcset="assets/images/background-lines-5.svg">
                                     <source media="(min-width:701px)" srcset="assets/images/background-lines-4.svg">
-                                    <img src="assets/images/background-lines-3.svg">
+                                    <img src="assets/images/background-lines-3.svg" alt="Картинка">
                                 </picture>
                                 <h1>Управление финансами</h1>
                                 <p>
@@ -138,7 +138,7 @@
                         <div class="finance-directions__items">
                             <div class="finance-directions__items__item">
                                 <picture>
-                                    <img src="assets/images/finance-icon-1.svg">
+                                    <img src="assets/images/finance-icon-1.svg" alt="Картинка">
                                 </picture>
                                 <ul>
                                     <li>НФП</li>
@@ -149,7 +149,7 @@
                             </div>
                             <div class="finance-directions__items__item">
                                 <picture>
-                                    <img src="assets/images/finance-icon-2.svg">
+                                    <img src="assets/images/finance-icon-2.svg" alt="Картинка">
                                 </picture>
                                 <ul>
                                     <li>фондовый рынок</li>
@@ -159,7 +159,7 @@
                             </div>
                             <div class="finance-directions__items__item">
                                 <picture>
-                                    <img src="assets/images/finance-icon-3.svg">
+                                    <img src="assets/images/finance-icon-3.svg" alt="Картинка">
                                 </picture>
                                 <ul>
                                     <li>инвестиции в бизнес</li>
@@ -169,7 +169,7 @@
                             </div>
                             <div class="finance-directions__items__item">
                                 <picture>
-                                    <img src="assets/images/finance-icon-4.svg">
+                                    <img src="assets/images/finance-icon-4.svg" alt="Картинка">
                                 </picture>
                                 <ul>
                                     <li>Алгоритмический трейдинг</li>
@@ -189,7 +189,7 @@
                                     <div class="subscription-dignities__items">
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Как снизить кредитную нагрузку
@@ -197,7 +197,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Как понять сколько зарабатываем и куда уходят деньги
@@ -205,7 +205,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Как увеличить доход
@@ -213,7 +213,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Как начать понимать в инвестициях
@@ -221,7 +221,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Как создать пассивный доход
@@ -233,7 +233,7 @@
                             <div class="two-columns__column" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0">
                                 <div class="subscription-form__container">
                                     <picture class="background-picture">
-                                        <img src="assets/images/background-lines-4.svg">
+                                        <img src="assets/images/background-lines-6.svg" alt="Картинка">
                                     </picture>
                                     <form action="#">
                                         <h2>Записаться на консультацию</h2>
@@ -270,41 +270,106 @@
                     <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                         <div class="faq__content">
                             <h2>Часто задаваемые вопросы</h2>
-                            <div class="faq__items" data-theme="blue">
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Lorem ipsum dolor sit amet consectetur?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                            <div class="faq__items custom-list" data-theme="blue">
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="information-button" id="information-button" data-theme="information-button-light">
@@ -327,7 +392,7 @@
                             <div class="two-columns__column" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
                                 <div class="subscription-form__container">
                                     <picture class="background-picture">
-                                        <img src="assets/images/background-lines-4.svg">
+                                        <img src="assets/images/background-lines-6.svg" alt="Картинка">
                                     </picture>
                                     <form action="#">
                                         <h2>Подписывайтесь на нашу рассылку и получайте подарки!</h2>
@@ -372,7 +437,7 @@
                                     <div class="subscription-dignities__items">
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Мини-книжка «10 ошибок сценария жизни»
@@ -380,7 +445,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Миллион желаний»
@@ -388,7 +453,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Секреты банков»
@@ -396,7 +461,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Семейный бюджет»
@@ -404,7 +469,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Уменьшение долгов»

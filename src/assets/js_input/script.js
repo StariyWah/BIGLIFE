@@ -1,3 +1,60 @@
+new class Tabs {
+    constructor() {
+       this.$wrapper;
+       this.$triggers;
+       this.$body;
+       this.init();
+    }
+    init() {
+       document.querySelectorAll('[data-tabs]').forEach((wrapper) => {
+          this.$wrapper = wrapper;
+          this.$triggers = wrapper.querySelectorAll('[data-triggers] [data-link]');
+          this.$body = [...wrapper.querySelector('[data-body]').children];
+          this.$triggers[0].classList.add('active');
+          this.$body[0].classList.add('active');
+          this.update();
+          this.addListenerClick();
+          this.addListenerHash();
+       });
+    }
+    update(event) {
+       const trigger = this.$wrapper.querySelector(`a[href="${window.location.hash}"]`);
+       const content = this.$wrapper.querySelector(`[data-id="${window.location.hash}"]`);
+       if (window.location.hash && trigger && content) {
+          this.$triggers.forEach((trigger) => {
+             trigger.classList.remove('active');
+          });
+          this.$body.forEach((content) => {
+             content.classList.remove('active');
+          });
+          trigger.classList.add('active');
+          content.classList.add('active');
+       }
+       sessionStorage.setItem("last-url", event?.oldURL);
+    }
+    addListenerClick() {
+       this.$triggers.forEach(trigger => {
+          trigger.addEventListener('click', this.changeTab.bind(this));
+       });
+    }
+    addListenerHash() {
+       window.addEventListener('hashchange', this.update.bind(this));
+    }
+    changeTab(event) {
+       event.preventDefault();
+       const trigger = event.target.closest('a[href^="#"]');
+       const content = this.$wrapper.querySelector(`[data-id="${trigger.hash}"]`);
+       this.$triggers.forEach(trigger => {
+          trigger.classList.remove('active');
+       });
+       this.$body.forEach(content => {
+          content.classList.remove('active');
+       });
+       trigger.classList.add('active');
+       content.classList.add('active');
+       history.replaceState(undefined, undefined, trigger.hash)
+    }
+};
 $(document).ready(function(){
     AOS.init({
         once: true,
@@ -45,6 +102,22 @@ $(document).ready(function(){
                     $(element).children('span').text(openText);
                     $(parent).removeClass('_active');
                     $(parent).children('.load-more__hidden-part').slideToggle(300);
+                }
+            }
+        });
+    });
+    let accordionButtons = document.querySelectorAll('.accordion__button');
+    $('.accordion__button').click(function(e){
+        e.preventDefault();
+        accordionButtons.forEach(element => {
+            let parent = $(element).parent();
+            if(element == this){
+                $(parent).toggleClass('_active');
+                $(parent).children('.accordion__container').slideToggle(300);
+            }else{
+                if($(parent).hasClass('_active')){
+                    $(parent).removeClass('_active');
+                    $(parent).children('.accordion__container').slideToggle(300);
                 }
             }
         });
@@ -152,6 +225,43 @@ $(document).ready(function(){
             },
         });
     }
+    if(document.querySelectorAll('.swiper-tariffs-large').length > 0) {
+        let tariffsLargeSlider = new Swiper('.swiper-tariffs-large .swiper', {
+            direction: 'horizontal',
+            spaceBetween: 16,
+            slidesPerView: 4,
+            navigation: {
+                prevEl: '.swiper-tariffs-large .swiper-button-prev',
+                nextEl: '.swiper-tariffs-large .swiper-button-next',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 10,
+                },
+                701: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1380: {
+                    slidesPerView: 4,
+                    spaceBetween: 16,
+                },
+            },
+        });
+    }
+    if(document.querySelectorAll('.swiper-clients-results').length > 0) {
+        let clientsResultsSlider = new Swiper('.swiper-clients-results .swiper', {
+            direction: 'horizontal',
+            spaceBetween: 50,
+            slidesPerView: 1,
+            autoHeight: 'auto',
+            navigation: {
+                prevEl: '.swiper-clients-results .swiper-button-prev',
+                nextEl: '.swiper-clients-results .swiper-button-next',
+            },
+        });
+    }
     if(document.querySelectorAll('.swiper-video-feedback').length > 0) {
         let feedbackSlider = new Swiper('.swiper-video-feedback .swiper', {
             direction: 'horizontal',
@@ -235,6 +345,7 @@ $(document).ready(function(){
         });
     }
     Fancybox.bind('[data-fancybox]', {
+        
     });
     function itemsHoverClickAnimation(items, itemClass) {
         if(items.length > 0) {

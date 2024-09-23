@@ -19,7 +19,7 @@
                                 <picture class="background-picture">
                                     <source media="(min-width:1440px)" srcset="assets/images/background-figure-1.svg">
                                     <source media="(min-width:701px)" srcset="assets/images/background-lines-4.svg">
-                                    <img src="assets/images/background-lines-3.svg">
+                                    <img src="assets/images/background-lines-3.svg" alt="Картинка">
                                 </picture>
                                 <h1>Трансформационные игры-тренинги</h1>
                                 <p class="games-banner__heading">
@@ -39,25 +39,25 @@
                 </div>
             </section>
             <section class="games-tabulation-section">
-                <div class="container__content">
-                    <div class="container">
+                <div class="container">
+                    <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                         <h2>Выберите свой путь</h2>
                         <div class="tabulation custom-list" data-tabs>
                             <div class="tabulation__navigation" data-triggers>
                                 <a data-link href="#dream" class="tabulation__navigation__item custom-list__item">
-                                    Трансформационная игра-тренинг «Путь к мечте»
+                                    <span>Трансформационная игра-тренинг «Путь к мечте»</span>
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
                                     </svg>
                                 </a>
                                 <a data-link href="#professional" class="tabulation__navigation__item custom-list__item">
-                                    Трансформационная бизнес-игра «Путь профи»
+                                    <span>Трансформационная бизнес-игра «Путь профи»</span>
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
                                     </svg>
                                 </a>
                                 <a data-link href="#leader" class="tabulation__navigation__item custom-list__item">
-                                    Трансформационная игра-тренинг «Путь лидера»
+                                    <span>Трансформационная игра-тренинг «Путь лидера»</span>
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
                                     </svg>
@@ -65,11 +65,11 @@
                             </div>
                             <div class="tabilation__items" data-body>
                                 <div class="tabilation__items__item" data-id="#dream">
-                                    <div class="transformational-game">
+                                    <div class="transformational-game" data-game-id="1">
                                         <div class="transformational-game__heading">
                                             <span class="h3">Трансформационная игра-тренинг</span>
-                                            <h1>Путь к мечте</h1>
-                                            <a href="#" class="main-button button_red" data-da=".transformational-game,1439,last">Приобрести</a>
+                                            <h2 class="h1">Путь к мечте</h2>
+                                            <a href="#" class="main-button button_red" data-da=".transformational-game[data-game-id='1'],1439,last">Приобрести</a>
                                         </div>
                                         <div class="transformational-game__description text-content">
                                             <p>
@@ -192,6 +192,407 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-container swiper-tariffs" data-theme="white">
+                                        <div class="section__heading">
+                                            <h2>Тарифы участия</h2>
+                                            <div class="swiper-navigation">
+                                                <div class="swiper-button-prev">
+                                                    <svg>
+                                                        <use xlink:href="#slider-prev-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-button-next">
+                                                    <svg>
+                                                        <use xlink:href="#slider-next-icon"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="information-button" id="information-button" data-theme="information-button-dark">
+                                                <svg>
+                                                    <use xlink:href="#info-icon"></use>
+                                                </svg>
+                                                <div class="information-button__content">
+                                                    <p>Помочь с выбором?</p>
+                                                    <a href="#">Свяжитесь с нами</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper custom-list">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>Standart</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Группа до 6 человек</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Домашнее задание</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Участие в игре (возможно онлайн)</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Разбор после игры</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            10 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>VIP</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Индивидуальная игра</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Домашнее задание</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Участие в игре (возможно онлайн)</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Разбор после игры</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            15 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>Стать ведущим</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Купить игру</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Коучинг по ведению игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Тестовое участие в игре</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Индивидуальный часовой разбор игры</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="load-more__hidden-part" style="display: none;">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Составление целевого плана и стратегии для ускорения достижения целей</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="load-more__button" data-close-text="Свернуть" data-open-text="Развернуть">
+                                                                <span>Развернуть</span>
+                                                                <svg>
+                                                                    <use xlink:href="#load-more-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            40 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="faq__content">
+                                        <h2>Часто задаваемые вопросы</h2>
+                                        <div class="faq__items custom-list" data-theme="red">
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как проходит игра? Какие этапы Вы пройдете?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>
+                                                                1 Этап. Вы заполняете бланки со своей мечтой, целями, источниками ресурсов, талантов, 
+                                                                возможных источников дохода в настоящем и будущем
+                                                                <br>
+                                                                2 Этап. Рождение - в ходе этого этапа происходит осознание, а ради чего я хочу жить? 
+                                                                И Возможна корректировка сценария будущего
+                                                                <br>
+                                                                3 Этап. Накопление ресурсов - Вы видите, что Вам приносит больше сил, а что отнимает
+                                                                <br>
+                                                                4 Этап. Создание активного и пассивного дохода на основе талантов и возможностей. 
+                                                                Вы видите, что кому -то возможности дохода приходят легко, а кому-то тяжело. В ходе 
+                                                                игры можно поменять отношение к деньгам и источникам дохода и ход игры мгновенно меняется.
+                                                                <br>
+                                                                5 Этап. Реализация целей - тут проявляются чудесные свойства игры - подсказывать игроку 
+                                                                истинные и ложные цели. Если цель не достаточно написана корректно или не является истинной 
+                                                                в 99% случаев игрок не может попасть на нужную клетку. Но стоит проработать цель - как она 
+                                                                сразу реализуется в игре. Во время игры происходит конкретизация цели. Поэтому после игры 
+                                                                в жизни она реализуется быстрее.
+                                                                <br>
+                                                                6 Этап. Реализации мечты - предназначения. Тут заложена великая формула счастья и успеха 
+                                                                “Чем больше пользы ты сделаешь окружающим, тем больше тебе вернется в виде радости, что ты 
+                                                                живешь не зря".
+                                                                <br>
+                                                                7 Этап. Работа с ведущим, видео курсы автора по реализации целей в жизни на основе полученных 
+                                                                подсказок и выводов во время игры
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Отличие игры «Путь к мечте» от других?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>
+                                                                Главные отличия игры “Путь к мечте” от многих других игр это: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>работа с личными - персональными целями, а не навязанными игрой или карточками</li>
+                                                                <li>проигравших в игре нет</li>
+                                                                <li>в игре заложены практически все аспекты жизни из которых состоит понятие счастье и 
+                                                                    успех: рождение, миссия, семья, работа, активный и пассивный доход, учеба, здоровье, 
+                                                                    основные финансовые инструменты (акции, бизнес, франшиза, недвижимость, депозит, 
+                                                                    накопительное страхование), таланты, благотворительность, форс-мажор, место силы...</li>
+                                                                <li>в игру можно играть многократно, с каждым разом играть будет все интереснее</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как долго идет игра, сколько игроков за одним полем?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>В среднем игра идет от 2-6 часов в зависимости от количества игроков и глубины проработки целей во время игры.</li>
+                                                                <li>Количество игроков от 1 -6.</li>
+                                                                <li>В игру можно играть парами (семейными, бизнес партнерами)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Какие психологические практики работают с игрой «Путь к мечте»?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>Игра является зеркалом состояния игрока, его мыслей и эмоций.</li>
+                                                                <li>Стоит с помощью любой практики изменить внутренний настрой - это сразу 
+                                                                    находит отражение в ходе игры.</li>
+                                                                <li>Поэтому во время игры можно убедится в результативности любой 
+                                                                    психологической техники снятия блокировок или переключения в ресурсные состояния.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Особенности игры «Путь к мечте» для детей?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>Дети от 9 лет с интересом играют в игру. У них есть чему поучиться. Они удивительно 
+                                                                    за счет настроя и игривости проходят с легкостью все этапы. Взрослые, включая “умный 
+                                                                    ум” находят в чем найти сложность. То есть все как в жизни.</li>
+                                                                <li>Будьте как дети и радуйтесь.</li>
+                                                                <li>Подросткам игра помогает определиться со своими талантами и показывает, что развитие 
+                                                                    талантов, учеба позволит в жизни быстрее достичь своих целей.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как часто можно играть в игру «Путь к мечте»?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново 
+                                                                сыграть, чтобы скорректировать направление жизни и настрой.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="information-button" id="information-button" data-theme="information-button-light">
+                                            <svg>
+                                                <use xlink:href="#info-icon"></use>
+                                            </svg>
+                                            <div class="information-button__content">
+                                                <p>Не нашли ответ на свой вопрос?</p>
+                                                <a href="#">Свяжитесь с нами</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabilation__items__item" data-id="#professional">
+                                    <div class="transformational-game" data-game-id="2">
+                                        <div class="transformational-game__heading">
+                                            <span class="h3">Трансформационная бизнес-игра</span>
+                                            <h2 class="h1">Путь профи</h2>
+                                            <a href="#" class="main-button button_red" data-da=".transformational-game[data-game-id='2'],1439,last">Приобрести</a>
+                                        </div>
+                                        <div class="transformational-game__description text-content">
+                                            <p>
+                                                Поможет в игровой форме провести стратегическую коуч сессию для тех, у кого есть бизнес или 
+                                                крупная цель, трасформирует ваш бизнес на новый уровень
+                                            </p>
+                                        </div>
+                                        <ol class="transformational-game__tasks custom-list">
+                                            <li>Стратегия</li>
+                                            <li>Идеи</li>
+                                            <li>Миссия</li>
+                                        </ol>
+                                        <div class="video__item">
+                                            <picture class="proportional-picture">
+                                                <source srcset="assets/images/video-game-2.avif" type="image/avif">
+                                                <source srcset="assets/images/video-game-2.webp" type="image/webp">
+                                                <img src="assets/images/video-game-2.png" alt="Картинка">
+                                            </picture>
+                                            <div class="video__play">
+                                                <svg>
+                                                    <use xlink:href="#video-play-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="video__content">
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
                                         </div>
                                     </div>
                                     <h2>Для тех, кто хочет:</h2>
@@ -341,9 +742,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-container swiper-tariffs" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
-                                        <div class="section__heading" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
-                                            <h2>Тарифы</h2>
+                                    <div class="swiper-container swiper-tariffs-large" data-theme="white">
+                                        <div class="section__heading">
+                                            <h2>Тарифы участия</h2>
                                             <div class="swiper-navigation">
                                                 <div class="swiper-button-prev">
                                                     <svg>
@@ -366,45 +767,139 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="swiper">
+                                        <div class="swiper custom-list">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
                                                     <div class="tariff">
-                                                        <div class="tariff__heading">
-                                                            <h3>Онлайн</h3>
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>Standart</h3>
                                                         </div>
                                                         <div class="load-more">
                                                             <div class="load-more__main-part">
                                                                 <div class="tariff__items">
                                                                     <div class="tariff__items__item item_plus">
                                                                         <picture class="icon-plus">
-                                                                            <img src="assets/images/plus-icon.svg">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
                                                                         </picture>
-                                                                        <p>Анализ текущей ситуации</p>
+                                                                        <p>Домашнее задание</p>
                                                                     </div>
                                                                     <div class="tariff__items__item item_plus">
                                                                         <picture class="icon-plus">
-                                                                            <img src="assets/images/plus-icon.svg">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
                                                                         </picture>
-                                                                        <p>Учет доходов и расходов</p>
+                                                                        <p>Участие в игре (возможно онлайн)</p>
                                                                     </div>
                                                                     <div class="tariff__items__item item_plus">
                                                                         <picture class="icon-plus">
-                                                                            <img src="assets/images/plus-icon.svg">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
                                                                         </picture>
-                                                                        <p>Составление целевого финансового плана</p>
+                                                                        <p>Краткий разбор после игры</p>
                                                                     </div>
                                                                     <div class="tariff__items__item item_plus">
                                                                         <picture class="icon-plus">
-                                                                            <img src="assets/images/plus-icon.svg">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
                                                                         </picture>
-                                                                        <p>Технологии повышения дохода</p>
+                                                                        <p>Чек-листы</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            3 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>Platinum</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Домашнее задание</p>
                                                                     </div>
                                                                     <div class="tariff__items__item item_plus">
                                                                         <picture class="icon-plus">
-                                                                            <img src="assets/images/plus-icon.svg">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
                                                                         </picture>
-                                                                        <p>Критерии надежности и риск менеджмент</p>
+                                                                        <p>Участие в игре (возможно онлайн)</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Краткий разбор после игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Индивидуальный часовой разбор игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Чек-листы</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            4 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>VIP</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Домашнее задание</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Участие в игре (возможно онлайн)</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Краткий разбор после игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Индивидуальный часовой разбор игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Составление целевого финансового плана и стратегии развития бизнеса</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -412,51 +907,15 @@
                                                                 <div class="tariff__items">
                                                                     <div class="tariff__items__item item_plus">
                                                                         <picture class="icon-plus">
-                                                                            <img src="assets/images/plus-icon.svg">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
                                                                         </picture>
-                                                                        <p>Инвестиционные инструменты</p>
+                                                                        <p>Разработка маркетинга</p>
                                                                     </div>
                                                                     <div class="tariff__items__item item_plus">
                                                                         <picture class="icon-plus">
-                                                                            <img src="assets/images/plus-icon.svg">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
                                                                         </picture>
-                                                                        <p>Как увеличить доход с помощью коммуникаций</p>
-                                                                    </div>
-                                                                    <div class="tariff__items__item item_plus">
-                                                                        <picture class="icon-plus">
-                                                                            <img src="assets/images/plus-icon.svg">
-                                                                        </picture>
-                                                                        <p>Окружение на миллион</p>
-                                                                    </div>
-                                                                    <div class="tariff__items__item item_minus">
-                                                                        <picture class="icon-minus">
-                                                                            <img src="assets/images/minus-icon.svg">
-                                                                        </picture>
-                                                                        <p>Групповой чат</p>
-                                                                    </div>
-                                                                    <div class="tariff__items__item item_minus">
-                                                                        <picture class="icon-minus">
-                                                                            <img src="assets/images/minus-icon.svg">
-                                                                        </picture>
-                                                                        <p>Еженедельные разборы участников</p>
-                                                                    </div>
-                                                                    <div class="tariff__items__item item_minus">
-                                                                        <picture class="icon-minus">
-                                                                            <img src="assets/images/minus-icon.svg">
-                                                                        </picture>
-                                                                        <p>Обратная связь</p>
-                                                                    </div>
-                                                                    <div class="tariff__items__item item_minus">
-                                                                        <picture class="icon-minus">
-                                                                            <img src="assets/images/minus-icon.svg">
-                                                                        </picture>
-                                                                        <p>Индивидуальное сопровождение</p>
-                                                                    </div>
-                                                                    <div class="tariff__items__item item_minus">
-                                                                        <picture class="icon-minus">
-                                                                            <img src="assets/images/minus-icon.svg">
-                                                                        </picture>
-                                                                        <p>Доступ к клубу Big LIFE</p>
+                                                                        <p>Чек-листы и подарки</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -471,11 +930,801 @@
                                                             Стоимость:
                                                         </p>
                                                         <p class="h2 tariff__price">
-                                                            45 000 рублей
+                                                            10 000 рублей
                                                         </p>
-                                                        <a href="#" class="main-button button_green">Приобрести</a>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
                                                     </div>
                                                 </div>
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>Стать ведущим</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Купить игру</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Коучинг по ведению игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Тестовое участие в игре</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Индивидуальный часовой разбор игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Составление целевого финансового плана и стратегии развития бизнеса</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="load-more__hidden-part" style="display: none;">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Чек-листы и подарки</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="load-more__button" data-close-text="Свернуть" data-open-text="Развернуть">
+                                                                <span>Развернуть</span>
+                                                                <svg>
+                                                                    <use xlink:href="#load-more-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            21 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="faq__content">
+                                        <h2>Часто задаваемые вопросы</h2>
+                                        <div class="faq__items custom-list" data-theme="red">
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как проходит игра? Какие этапы Вы пройдете?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>
+                                                                1 Этап. Вы заполняете бланки со своей мечтой, целями, источниками ресурсов, талантов, 
+                                                                возможных источников дохода в настоящем и будущем
+                                                                <br>
+                                                                2 Этап. Рождение - в ходе этого этапа происходит осознание, а ради чего я хочу жить? 
+                                                                И Возможна корректировка сценария будущего
+                                                                <br>
+                                                                3 Этап. Накопление ресурсов - Вы видите, что Вам приносит больше сил, а что отнимает
+                                                                <br>
+                                                                4 Этап. Создание активного и пассивного дохода на основе талантов и возможностей. 
+                                                                Вы видите, что кому -то возможности дохода приходят легко, а кому-то тяжело. В ходе 
+                                                                игры можно поменять отношение к деньгам и источникам дохода и ход игры мгновенно меняется.
+                                                                <br>
+                                                                5 Этап. Реализация целей - тут проявляются чудесные свойства игры - подсказывать игроку 
+                                                                истинные и ложные цели. Если цель не достаточно написана корректно или не является истинной 
+                                                                в 99% случаев игрок не может попасть на нужную клетку. Но стоит проработать цель - как она 
+                                                                сразу реализуется в игре. Во время игры происходит конкретизация цели. Поэтому после игры 
+                                                                в жизни она реализуется быстрее.
+                                                                <br>
+                                                                6 Этап. Реализации мечты - предназначения. Тут заложена великая формула счастья и успеха 
+                                                                “Чем больше пользы ты сделаешь окружающим, тем больше тебе вернется в виде радости, что ты 
+                                                                живешь не зря".
+                                                                <br>
+                                                                7 Этап. Работа с ведущим, видео курсы автора по реализации целей в жизни на основе полученных 
+                                                                подсказок и выводов во время игры
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Отличие игры «Путь к мечте» от других?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>
+                                                                Главные отличия игры “Путь к мечте” от многих других игр это: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>работа с личными - персональными целями, а не навязанными игрой или карточками</li>
+                                                                <li>проигравших в игре нет</li>
+                                                                <li>в игре заложены практически все аспекты жизни из которых состоит понятие счастье и 
+                                                                    успех: рождение, миссия, семья, работа, активный и пассивный доход, учеба, здоровье, 
+                                                                    основные финансовые инструменты (акции, бизнес, франшиза, недвижимость, депозит, 
+                                                                    накопительное страхование), таланты, благотворительность, форс-мажор, место силы...</li>
+                                                                <li>в игру можно играть многократно, с каждым разом играть будет все интереснее</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как долго идет игра, сколько игроков за одним полем?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>В среднем игра идет от 2-6 часов в зависимости от количества игроков и глубины проработки целей во время игры.</li>
+                                                                <li>Количество игроков от 1 -6.</li>
+                                                                <li>В игру можно играть парами (семейными, бизнес партнерами)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Какие психологические практики работают с игрой «Путь к мечте»?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>Игра является зеркалом состояния игрока, его мыслей и эмоций.</li>
+                                                                <li>Стоит с помощью любой практики изменить внутренний настрой - это сразу 
+                                                                    находит отражение в ходе игры.</li>
+                                                                <li>Поэтому во время игры можно убедится в результативности любой 
+                                                                    психологической техники снятия блокировок или переключения в ресурсные состояния.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Особенности игры «Путь к мечте» для детей?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>Дети от 9 лет с интересом играют в игру. У них есть чему поучиться. Они удивительно 
+                                                                    за счет настроя и игривости проходят с легкостью все этапы. Взрослые, включая “умный 
+                                                                    ум” находят в чем найти сложность. То есть все как в жизни.</li>
+                                                                <li>Будьте как дети и радуйтесь.</li>
+                                                                <li>Подросткам игра помогает определиться со своими талантами и показывает, что развитие 
+                                                                    талантов, учеба позволит в жизни быстрее достичь своих целей.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как часто можно играть в игру «Путь к мечте»?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново 
+                                                                сыграть, чтобы скорректировать направление жизни и настрой.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="information-button" id="information-button" data-theme="information-button-light">
+                                            <svg>
+                                                <use xlink:href="#info-icon"></use>
+                                            </svg>
+                                            <div class="information-button__content">
+                                                <p>Не нашли ответ на свой вопрос?</p>
+                                                <a href="#">Свяжитесь с нами</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabilation__items__item" data-id="#leader">
+                                    <div class="transformational-game" data-game-id="3">
+                                        <div class="transformational-game__heading">
+                                            <span class="h3">Трансформационная бизнес-игра</span>
+                                            <h2 class="h1">Путь героя</h2>
+                                            <a href="#" class="main-button button_red" data-da=".transformational-game[data-game-id='3'],1439,last">Приобрести</a>
+                                        </div>
+                                        <div class="transformational-game__description text-content">
+                                            <p>
+                                                Игра помогает найти ответ на вопрос: «Как мне стать тем, кто способен реализовать цель, которая кажется сложной и 
+                                                трудной?». Внутри нас много разных уникальных сил, талантов, способностей. Большинство из них дремлет и ждет 
+                                                своего часа, когда их призовут ради великих побед и достижений
+                                            </p>
+                                        </div>
+                                        <div class="video__item">
+                                            <picture class="proportional-picture">
+                                                <source srcset="assets/images/video-game-3.avif" type="image/avif">
+                                                <source srcset="assets/images/video-game-3.webp" type="image/webp">
+                                                <img src="assets/images/video-game-3.png" alt="Картинка">
+                                            </picture>
+                                            <div class="video__play">
+                                                <svg>
+                                                    <use xlink:href="#video-play-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="video__content">
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=_vEgKLxFfx0" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
+                                        </div>
+                                    </div>
+                                    <h2>С помощью игры можно узнать:</h2>
+                                    <div class="games-information__items">
+                                        <div class="games-information__items__item">
+                                            <div class="item__container">
+                                                <div class="item__content">
+                                                    <div class="content__wrapper">
+                                                        <svg>
+                                                            <use xlink:href="#games-icon"></use>
+                                                        </svg>
+                                                        <p class="item__description">
+                                                            Какая сила, каким героем в вас откликается для реализации цели
+                                                        </p>
+                                                        <div class="item__hidden-text">
+                                                            <div class="item__hidden-text__content">
+                                                                <p>
+                                                                    Мало «разбудить силу», нужно еще «подружиться» с ней и направить на 
+                                                                    реализацию нужной цели. Внутренние силы-супергерои понимают только 
+                                                                    язык метафор и образов
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="games-information__items__item">
+                                            <div class="item__container">
+                                                <div class="item__content">
+                                                    <div class="content__wrapper">
+                                                        <svg>
+                                                            <use xlink:href="#games-icon"></use>
+                                                        </svg>
+                                                        <p class="item__description">
+                                                            Как управлять и развивать эту силу
+                                                        </p>
+                                                        <div class="item__hidden-text">
+                                                            <div class="item__hidden-text__content">
+                                                                <p>
+                                                                    Мало «разбудить силу», нужно еще «подружиться» с ней и направить на 
+                                                                    реализацию нужной цели. Внутренние силы-супергерои понимают только 
+                                                                    язык метафор и образов
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="games-information__items__item">
+                                            <div class="item__container">
+                                                <div class="item__content">
+                                                    <div class="content__wrapper">
+                                                        <svg>
+                                                            <use xlink:href="#games-icon"></use>
+                                                        </svg>
+                                                        <p class="item__description">
+                                                            Каким путем идти
+                                                        </p>
+                                                        <div class="item__hidden-text">
+                                                            <div class="item__hidden-text__content">
+                                                                <p>
+                                                                    Мало «разбудить силу», нужно еще «подружиться» с ней и направить на 
+                                                                    реализацию нужной цели. Внутренние силы-супергерои понимают только 
+                                                                    язык метафор и образов
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="games-information__items__item">
+                                            <div class="item__container">
+                                                <div class="item__content">
+                                                    <div class="content__wrapper">
+                                                        <svg>
+                                                            <use xlink:href="#games-icon"></use>
+                                                        </svg>
+                                                        <p class="item__description">
+                                                            Обнаружите и <b>разовьете точки роста</b>, усилите запланированные цели и мечты
+                                                        </p>
+                                                        <div class="item__hidden-text">
+                                                            <div class="item__hidden-text__content">
+                                                                <p>
+                                                                    Мало «разбудить силу», нужно еще «подружиться» с ней и направить на 
+                                                                    реализацию нужной цели. Внутренние силы-супергерои понимают только 
+                                                                    язык метафор и образов
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-container swiper-tariffs-large" data-theme="white">
+                                        <div class="section__heading">
+                                            <h2>Тарифы участия</h2>
+                                            <div class="swiper-navigation">
+                                                <div class="swiper-button-prev">
+                                                    <svg>
+                                                        <use xlink:href="#slider-prev-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="swiper-button-next">
+                                                    <svg>
+                                                        <use xlink:href="#slider-next-icon"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="information-button" id="information-button" data-theme="information-button-dark">
+                                                <svg>
+                                                    <use xlink:href="#info-icon"></use>
+                                                </svg>
+                                                <div class="information-button__content">
+                                                    <p>Помочь с выбором?</p>
+                                                    <a href="#">Свяжитесь с нами</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper custom-list">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>Standart</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Группа до 6 человек</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Домашнее задание</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Участие в игре (возможно онлайн)</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Разбор после игры</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            4 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>Platinum</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Индивидуальная игра</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Домашнее задание</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Участие в игре (возможно онлайн)</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Разбор после игры</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            5 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>VIP</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Домашнее задание</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Участие в игре (возможно онлайн)</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Индивидуальный часовой разбор игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Составление стратегии ускорения целей</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            7 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="tariff">
+                                                        <div class="tariff__heading custom-list__item">
+                                                            <h3>Стать ведущим</h3>
+                                                        </div>
+                                                        <div class="load-more">
+                                                            <div class="load-more__main-part">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Купить игру</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Коучинг по ведению игры</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Тестовое участие в игре</p>
+                                                                    </div>
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Индивидуальный часовой разбор игры</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="load-more__hidden-part" style="display: none;">
+                                                                <div class="tariff__items">
+                                                                    <div class="tariff__items__item item_plus">
+                                                                        <picture class="icon-plus">
+                                                                            <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                                        </picture>
+                                                                        <p>Составление целевого финансового плана и стратегии развития бизнеса</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="load-more__button" data-close-text="Свернуть" data-open-text="Развернуть">
+                                                                <span>Развернуть</span>
+                                                                <svg>
+                                                                    <use xlink:href="#load-more-icon"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <p class="h3 tariff__price-heading">
+                                                            Стоимость:
+                                                        </p>
+                                                        <p class="h2 tariff__price">
+                                                            21 000 рублей
+                                                        </p>
+                                                        <a href="#" class="main-button button_red">Приобрести</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="faq__content">
+                                        <h2>Часто задаваемые вопросы</h2>
+                                        <div class="faq__items custom-list" data-theme="red">
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как проходит игра? Какие этапы Вы пройдете?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>
+                                                                1 Этап. Вы заполняете бланки со своей мечтой, целями, источниками ресурсов, талантов, 
+                                                                возможных источников дохода в настоящем и будущем
+                                                                <br>
+                                                                2 Этап. Рождение - в ходе этого этапа происходит осознание, а ради чего я хочу жить? 
+                                                                И Возможна корректировка сценария будущего
+                                                                <br>
+                                                                3 Этап. Накопление ресурсов - Вы видите, что Вам приносит больше сил, а что отнимает
+                                                                <br>
+                                                                4 Этап. Создание активного и пассивного дохода на основе талантов и возможностей. 
+                                                                Вы видите, что кому -то возможности дохода приходят легко, а кому-то тяжело. В ходе 
+                                                                игры можно поменять отношение к деньгам и источникам дохода и ход игры мгновенно меняется.
+                                                                <br>
+                                                                5 Этап. Реализация целей - тут проявляются чудесные свойства игры - подсказывать игроку 
+                                                                истинные и ложные цели. Если цель не достаточно написана корректно или не является истинной 
+                                                                в 99% случаев игрок не может попасть на нужную клетку. Но стоит проработать цель - как она 
+                                                                сразу реализуется в игре. Во время игры происходит конкретизация цели. Поэтому после игры 
+                                                                в жизни она реализуется быстрее.
+                                                                <br>
+                                                                6 Этап. Реализации мечты - предназначения. Тут заложена великая формула счастья и успеха 
+                                                                “Чем больше пользы ты сделаешь окружающим, тем больше тебе вернется в виде радости, что ты 
+                                                                живешь не зря".
+                                                                <br>
+                                                                7 Этап. Работа с ведущим, видео курсы автора по реализации целей в жизни на основе полученных 
+                                                                подсказок и выводов во время игры
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Отличие игры «Путь к мечте» от других?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>
+                                                                Главные отличия игры “Путь к мечте” от многих других игр это: 
+                                                            </p>
+                                                            <ul>
+                                                                <li>работа с личными - персональными целями, а не навязанными игрой или карточками</li>
+                                                                <li>проигравших в игре нет</li>
+                                                                <li>в игре заложены практически все аспекты жизни из которых состоит понятие счастье и 
+                                                                    успех: рождение, миссия, семья, работа, активный и пассивный доход, учеба, здоровье, 
+                                                                    основные финансовые инструменты (акции, бизнес, франшиза, недвижимость, депозит, 
+                                                                    накопительное страхование), таланты, благотворительность, форс-мажор, место силы...</li>
+                                                                <li>в игру можно играть многократно, с каждым разом играть будет все интереснее</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как долго идет игра, сколько игроков за одним полем?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>В среднем игра идет от 2-6 часов в зависимости от количества игроков и глубины проработки целей во время игры.</li>
+                                                                <li>Количество игроков от 1 -6.</li>
+                                                                <li>В игру можно играть парами (семейными, бизнес партнерами)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Какие психологические практики работают с игрой «Путь к мечте»?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>Игра является зеркалом состояния игрока, его мыслей и эмоций.</li>
+                                                                <li>Стоит с помощью любой практики изменить внутренний настрой - это сразу 
+                                                                    находит отражение в ходе игры.</li>
+                                                                <li>Поэтому во время игры можно убедится в результативности любой 
+                                                                    психологической техники снятия блокировок или переключения в ресурсные состояния.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Особенности игры «Путь к мечте» для детей?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <ul>
+                                                                <li>Дети от 9 лет с интересом играют в игру. У них есть чему поучиться. Они удивительно 
+                                                                    за счет настроя и игривости проходят с легкостью все этапы. Взрослые, включая “умный 
+                                                                    ум” находят в чем найти сложность. То есть все как в жизни.</li>
+                                                                <li>Будьте как дети и радуйтесь.</li>
+                                                                <li>Подросткам игра помогает определиться со своими талантами и показывает, что развитие 
+                                                                    талантов, учеба позволит в жизни быстрее достичь своих целей.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq__items__item accordion">
+                                                <div class="accordion__button custom-list__item">
+                                                    <p class="item__heading accordion__button__heading">
+                                                        Как часто можно играть в игру «Путь к мечте»?
+                                                    </p>
+                                                    <svg class="accordion__button__icon">
+                                                        <use xlink:href="#right-arrow-icon"></use>
+                                                    </svg>
+                                                    <svg class="accordion__close__icon">
+                                                        <use xlink:href="#close-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion__container" style="display: none;">
+                                                    <div class="accordion__content">     
+                                                        <div class="text-content">
+                                                            <p>Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново 
+                                                                сыграть, чтобы скорректировать направление жизни и настрой.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="information-button" id="information-button" data-theme="information-button-light">
+                                            <svg>
+                                                <use xlink:href="#info-icon"></use>
+                                            </svg>
+                                            <div class="information-button__content">
+                                                <p>Не нашли ответ на свой вопрос?</p>
+                                                <a href="#">Свяжитесь с нами</a>
                                             </div>
                                         </div>
                                     </div>
@@ -709,7 +1958,7 @@
                             <div class="two-columns__column" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
                                 <div class="subscription-form__container">
                                     <picture class="background-picture">
-                                        <img src="assets/images/background-lines-4.svg">
+                                        <img src="assets/images/background-lines-4.svg" alt="Картинка">
                                     </picture>
                                     <form action="#">
                                         <h2>Подписывайтесь на нашу рассылку и получайте подарки!</h2>
@@ -754,7 +2003,7 @@
                                     <div class="subscription-dignities__items">
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Мини-книжка «10 ошибок сценария жизни»
@@ -762,7 +2011,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Миллион желаний»
@@ -770,7 +2019,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Секреты банков»
@@ -778,7 +2027,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Семейный бюджет»
@@ -786,7 +2035,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Уменьшение долгов»

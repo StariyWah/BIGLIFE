@@ -13,12 +13,12 @@
         <main>
             <section class="technology-banner-section">
                 <div class="container">
-                    <div class="container__content">
+                    <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                         <div class="technology-banner__items">
                             <div class="technology-banner__items__item item_heading">
                                 <picture class="background-picture">
                                     <source media="(min-width:1440px)" srcset="assets/images/background-lines-2.svg">
-                                    <img src="assets/images/background-lines-1.svg">
+                                    <img src="assets/images/background-lines-1.svg" alt="Картинка">
                                 </picture>
                                 <h1 class="banner__heading">Получите деньги на свои цели и задачи</h1>
                                 <div class="banner__content">
@@ -32,8 +32,8 @@
                                     </p>
                                 </div>
                                 <div class="banner__buttons">
-                                    <a href="#" class="main-button _contour" data-da=".technology-banner__items__item.item_buttons,700,last">Посмотреть тарифы</a>
-                                    <a href="#" class="main-button" data-da=".technology-banner__items__item.item_buttons,700,last">
+                                    <a href="#" class="main-button _contour" data-da=".technology-banner__items__item.item_buttons,700,1">Посмотреть тарифы</a>
+                                    <a href="#" class="main-button" data-da=".technology-banner__items__item.item_buttons,700,2">
                                         Получить консультацию
                                         <svg>
                                             <use xlink:href="#right-arrow-icon"></use>
@@ -66,7 +66,7 @@
             </section>
             <section class="how-works-section">
                 <div class="container">
-                    <div class="container__content">
+                    <div class="container__content"  data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                         <div class="how-works__items custom-list">
                             <div class="section__description">
                                 <h2>Как это работает</h2>
@@ -159,7 +159,7 @@
             </section>
             <section class="technology-advantages-section">
                 <div class="container">
-                    <div class="container__content">
+                    <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                         <h2>Преимущества</h2>
                         <div class="technology-advantages__items custom-list">
                             <div class="technology-advantages__items__item">
@@ -224,6 +224,339 @@
                     </div>
                 </div>
             </section>
+            <section class="tariffs-section">
+                <div class="container">
+                    <div class="container__content">
+                        <div class="swiper-container swiper-tariffs-large" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
+                            <div class="section__heading" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
+                                <h2>Тарифы</h2>
+                                <div class="swiper-navigation">
+                                    <div class="swiper-button-prev">
+                                        <svg>
+                                            <use xlink:href="#slider-prev-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <svg>
+                                            <use xlink:href="#slider-next-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="information-button" id="information-button" data-theme="information-button-dark">
+                                    <svg>
+                                        <use xlink:href="#info-icon"></use>
+                                    </svg>
+                                    <div class="information-button__content">
+                                        <p>Помочь с выбором?</p>
+                                        <a href="#">Свяжитесь с нами</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper custom-list">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="tariff">
+                                            <div class="tariff__heading custom-list__item">
+                                                <h3>Бесплатная консультация</h3>
+                                            </div>
+                                            <div class="load-more">
+                                                <div class="load-more__main-part">
+                                                    <div class="tariff__items">
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Диагностическая консультация для разбора вашей ситуации</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="h3 tariff__price-heading">
+                                                Стоимость:
+                                            </p>
+                                            <p class="h2 tariff__price">
+                                                Бесплатно
+                                            </p>
+                                            <a href="#" class="main-button button_green">Приобрести</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tariff">
+                                            <div class="tariff__heading custom-list__item">
+                                                <h3>Стратегия</h3>
+                                            </div>
+                                            <div class="load-more">
+                                                <div class="load-more__main-part">
+                                                    <div class="tariff__items">
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Анализ текущей ситуации</p>
+                                                        </div>
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Разработка стратегии применения технологии: несколько вариантов 
+                                                                эффективного использования средств для решения ваших проблем и задач</p>
+                                                        </div>
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Разбор технологии использования кредитной карты одного банка. Это может быть 
+                                                                карта, которая у вас уже есть или если ваша карта не подходит для решения вашего запроса, 
+                                                                подберем карту другого банка</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="load-more__hidden-part" style="display: none;">
+                                                    <div class="tariff__items">
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Сопровождение по использованию карты в течение месяца</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="load-more__button" data-close-text="Свернуть" data-open-text="Развернуть">
+                                                    <span>Развернуть</span>
+                                                    <svg>
+                                                        <use xlink:href="#load-more-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <p class="h3 tariff__price-heading">
+                                                Стоимость:
+                                            </p>
+                                            <p class="h2 tariff__price">
+                                                5 000 рублей
+                                            </p>
+                                            <a href="#" class="main-button button_green">Приобрести</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tariff">
+                                            <div class="tariff__heading custom-list__item">
+                                                <h3>Личное сопровождение</h3>
+                                            </div>
+                                            <div class="load-more">
+                                                <div class="load-more__main-part">
+                                                    <div class="tariff__items">
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Тариф «Видео-курс»</p>
+                                                        </div>
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Персональное сопровождение на 1 месяц</p>
+                                                        </div>
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Разработка персональной стратегии достижения финансового результата</p>
+                                                        </div>
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Уникальная технология снятия наличных с кредитных карт в полном объеме, 
+                                                                независимо от лимита, установленного банком</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="load-more__hidden-part" style="display: none;">
+                                                    <div class="tariff__items">
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Возможность задать любой возникающий вопрос по теме в течение 1 месяца</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="load-more__button" data-close-text="Свернуть" data-open-text="Развернуть">
+                                                    <span>Развернуть</span>
+                                                    <svg>
+                                                        <use xlink:href="#load-more-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <p class="h3 tariff__price-heading">
+                                                Стоимость:
+                                            </p>
+                                            <p class="h2 tariff__price">
+                                                50 000 рублей
+                                            </p>
+                                            <a href="#" class="main-button button_green">Приобрести</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tariff">
+                                            <div class="tariff__heading custom-list__item">
+                                                <h3>Кредитный эксперт</h3>
+                                            </div>
+                                            <div class="load-more">
+                                                <div class="load-more__main-part">
+                                                    <div class="tariff__items">
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Освоение новой профессии</p>
+                                                        </div>
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Анализ банков по вопросу получения денежных средств без процентов</p>
+                                                        </div>
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Маркетинг, продажи и работа с клиентами</p>
+                                                        </div>
+                                                        <div class="tariff__items__item item_plus">
+                                                            <picture class="icon-plus">
+                                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                                            </picture>
+                                                            <p>Возможность бизнес сотрудничества с Big LIFE</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="h3 tariff__price-heading">
+                                                Стоимость:
+                                            </p>
+                                            <p class="h2 tariff__price">
+                                                150 000 рублей
+                                            </p>
+                                            <a href="#" class="main-button button_green">Приобрести</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clients-results-section">
+                <div class="container">
+                    <div class="container__content">
+                        <div class="swiper-container swiper-clients-results" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
+                            <div class="section__heading" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
+                                <h2>Результаты наших клиентов</h2>
+                                <div class="swiper-navigation">
+                                    <div class="swiper-button-prev">
+                                        <svg>
+                                            <use xlink:href="#slider-prev-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <svg>
+                                            <use xlink:href="#slider-next-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="client-result__items">
+                                            <div class="client-result__items__item item_about">
+                                                <picture class="background-picture">
+                                                    <source media="(min-width:1440px)" srcset="assets/images/background-lines-9.svg">
+                                                    <source media="(min-width:701px)" srcset="assets/images/background-lines-8.svg">
+                                                    <img src="assets/images/background-lines-7.svg" alt="Картинка">
+                                                </picture>
+                                                <picture class="client__avatar">
+                                                    <source srcset="assets/images/client-5.avif" type="image/avif">
+                                                    <source srcset="assets/images/client-5.webp" type="image/webp">
+                                                    <img src="assets/images/client-5.png" alt="Картинка">
+                                                </picture>
+                                                <span class="client__name">Ирина Зверева</span>
+                                                <span class="client__description">Старшая медсестра</span>
+                                            </div>
+                                            <div class="client-result__items__item item_before">
+                                                <span class="client__heading">ТОЧКА а</span>
+                                                <ul>
+                                                    <li>За 20 дней нужно было найти 200 000 рублей</li>
+                                                    <li>Ежемесячные платежи по 5 кредитам на общую сумму 30 000 рублей в месяц</li>
+                                                    <li>Долг по кредитным картам — 170 000 рублей</li>
+                                                    <li>Накопления — 34 000 рублей</li>
+                                                </ul>
+                                            </div>
+                                            <div class="client-result__items__item item_after">
+                                                <span class="client__heading">ТОЧКА Б</span>
+                                                <ul>
+                                                    <li>Мы проанализировали ситуацию и нашли на других кредитках свободные 
+                                                        деньги на своевременное погашение кредитных обязательств</li>
+                                                    <li>Составили для Ирины пошаговый план, как использовать эти 
+                                                        средства, не платя проценты</li>
+                                                    <li>Погасили кредитные платежи и дополнительно на руки получили 80 000 
+                                                        рублей и сразу вложили в 4 надежных источника пассивного дохода</li>
+                                                    <li>При этом не использовали личные накопления вообще</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-result__items">
+                                            <div class="client-result__items__item item_about">
+                                                <picture class="background-picture">
+                                                    <source media="(min-width:1440px)" srcset="assets/images/background-lines-9.svg">
+                                                    <source media="(min-width:701px)" srcset="assets/images/background-lines-8.svg">
+                                                    <img src="assets/images/background-lines-7.svg" alt="Картинка">
+                                                </picture>
+                                                <picture class="client__avatar">
+                                                    <source srcset="assets/images/client-5.avif" type="image/avif">
+                                                    <source srcset="assets/images/client-5.webp" type="image/webp">
+                                                    <img src="assets/images/client-5.png" alt="Картинка">
+                                                </picture>
+                                                <span class="client__name">Ирина Зверева</span>
+                                                <span class="client__description">Старшая медсестра</span>
+                                            </div>
+                                            <div class="client-result__items__item item_before">
+                                                <span class="client__heading">ТОЧКА а</span>
+                                                <ul>
+                                                    <li>За 20 дней нужно было найти 200 000 рублей</li>
+                                                    <li>Ежемесячные платежи по 5 кредитам на общую сумму 30 000 рублей в месяц</li>
+                                                    <li>Долг по кредитным картам — 170 000 рублей</li>
+                                                    <li>Накопления — 34 000 рублей</li>
+                                                    <li>За 20 дней нужно было найти 200 000 рублей</li>
+                                                    <li>Ежемесячные платежи по 5 кредитам на общую сумму 30 000 рублей в месяц</li>
+                                                    <li>Долг по кредитным картам — 170 000 рублей</li>
+                                                    <li>Накопления — 34 000 рублей</li>
+                                                </ul>
+                                            </div>
+                                            <div class="client-result__items__item item_after">
+                                                <span class="client__heading">ТОЧКА Б</span>
+                                                <ul>
+                                                    <li>Мы проанализировали ситуацию и нашли на других кредитках свободные 
+                                                        деньги на своевременное погашение кредитных обязательств</li>
+                                                    <li>Составили для Ирины пошаговый план, как использовать эти 
+                                                        средства, не платя проценты</li>
+                                                    <li>Погасили кредитные платежи и дополнительно на руки получили 80 000 
+                                                        рублей и сразу вложили в 4 надежных источника пассивного дохода</li>
+                                                    <li>При этом не использовали личные накопления вообще</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="video-feedback-section">
                 <div class="container">
                     <div class="container__content">
@@ -248,9 +581,9 @@
                                     <div class="swiper-slide">
                                         <div class="video__item">
                                             <picture class="proportional-picture">
-                                                <source srcset="assets/images/video-preview-5.avif" type="image/avif">
-                                                <source srcset="assets/images/video-preview-5.webp" type="image/webp">
-                                                <img src="assets/images/video-preview-5.png" alt="Картинка">
+                                                <source srcset="assets/images/video-preview-1.avif" type="image/avif">
+                                                <source srcset="assets/images/video-preview-1.webp" type="image/webp">
+                                                <img src="assets/images/video-preview-1.png" alt="Картинка">
                                             </picture>
                                             <div class="video__play">
                                                 <svg>
@@ -258,7 +591,8 @@
                                                 </svg>
                                             </div>
                                             <div class="video__content">
-                                                <p class="video__heading">Екатерина и Артур <br>Бухарметовы</p>
+                                                <p class="video__heading">елена алмазова</p>
+                                                <p class="video__description">Сформировали пассивный доход 40 000 рублей</p>
                                             </div>
                                             <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
                                         </div>
@@ -266,9 +600,9 @@
                                     <div class="swiper-slide">
                                         <div class="video__item">
                                             <picture class="proportional-picture">
-                                                <source srcset="assets/images/video-preview-4.avif" type="image/avif">
-                                                <source srcset="assets/images/video-preview-4.webp" type="image/webp">
-                                                <img src="assets/images/video-preview-4.png" alt="Картинка">
+                                                <source srcset="assets/images/video-preview-17.avif" type="image/avif">
+                                                <source srcset="assets/images/video-preview-17.webp" type="image/webp">
+                                                <img src="assets/images/video-preview-17.png" alt="Картинка">
                                             </picture>
                                             <div class="video__play">
                                                 <svg>
@@ -276,7 +610,8 @@
                                                 </svg>
                                             </div>
                                             <div class="video__content">
-                                                <p class="video__heading">Линар Аглиуллин</p>
+                                                <p class="video__heading">Антон каракозов</p>
+                                                <p class="video__description">Кредитные платежи стали на 17 000 рублей меньше</p>
                                             </div>
                                             <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
                                         </div>
@@ -284,9 +619,9 @@
                                     <div class="swiper-slide">
                                         <div class="video__item">
                                             <picture class="proportional-picture">
-                                                <source srcset="assets/images/video-preview-6.avif" type="image/avif">
-                                                <source srcset="assets/images/video-preview-6.webp" type="image/webp">
-                                                <img src="assets/images/video-preview-6.png" alt="Картинка">
+                                                <source srcset="assets/images/video-preview-18.avif" type="image/avif">
+                                                <source srcset="assets/images/video-preview-18.webp" type="image/webp">
+                                                <img src="assets/images/video-preview-18.png" alt="Картинка">
                                             </picture>
                                             <div class="video__play">
                                                 <svg>
@@ -294,7 +629,8 @@
                                                 </svg>
                                             </div>
                                             <div class="video__content">
-                                                <p class="video__heading">Айрат Тухватуллин</p>
+                                                <p class="video__heading">МАрия</p>
+                                                <p class="video__description">Остановили начисление процентов по кредитным картам</p>
                                             </div>
                                             <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
                                         </div>
@@ -302,9 +638,9 @@
                                     <div class="swiper-slide">
                                         <div class="video__item">
                                             <picture class="proportional-picture">
-                                                <source srcset="assets/images/video-preview-7.avif" type="image/avif">
-                                                <source srcset="assets/images/video-preview-7.webp" type="image/webp">
-                                                <img src="assets/images/video-preview-7.png" alt="Картинка">
+                                                <source srcset="assets/images/video-preview-19.avif" type="image/avif">
+                                                <source srcset="assets/images/video-preview-19.webp" type="image/webp">
+                                                <img src="assets/images/video-preview-19.png" alt="Картинка">
                                             </picture>
                                             <div class="video__play">
                                                 <svg>
@@ -312,7 +648,8 @@
                                                 </svg>
                                             </div>
                                             <div class="video__content">
-                                                <p class="video__heading">Сергей Чурбанов</p>
+                                                <p class="video__heading">Ильяс умяров</p>
+                                                <p class="video__description">Получил 1 200 000 рублей</p>
                                             </div>
                                             <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
                                         </div>
@@ -328,41 +665,106 @@
                     <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                         <div class="faq__content">
                             <h2>Часто задаваемые вопросы</h2>
-                            <div class="faq__items">
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Lorem ipsum dolor sit amet consectetur?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                            <div class="faq__items custom-list">
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="faq__items__item">
-                                    <p class="item__heading">Convallis nam tincidunt amet proin non nec?</p>
-                                    <svg>
-                                        <use xlink:href="#right-arrow-icon"></use>
-                                    </svg>
-                                    <a href="#" class="absolute-link"></a>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="information-button" id="information-button" data-theme="information-button-light">
@@ -385,7 +787,7 @@
                             <div class="two-columns__column" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
                                 <div class="subscription-form__container">
                                     <picture class="background-picture">
-                                        <img src="assets/images/background-lines-4.svg">
+                                        <img src="assets/images/background-lines-4.svg" alt="Картинка">
                                     </picture>
                                     <form action="#">
                                         <h2>Подписывайтесь на нашу рассылку и получайте подарки!</h2>
@@ -430,7 +832,7 @@
                                     <div class="subscription-dignities__items">
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Мини-книжка «10 ошибок сценария жизни»
@@ -438,7 +840,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Миллион желаний»
@@ -446,7 +848,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Секреты банков»
@@ -454,7 +856,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Семейный бюджет»
@@ -462,7 +864,7 @@
                                         </div>
                                         <div class="subscription-dignities__item">
                                             <picture class="icon-plus">
-                                                <img src="assets/images/plus-icon.svg">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
                                             </picture>
                                             <p>
                                                 Гайд «Уменьшение долгов»
