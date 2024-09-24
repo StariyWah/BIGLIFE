@@ -11,6 +11,59 @@
    <div class="wrapper">
         @@include('../parts/header.html')
         <main>
+            <div id="consultation" class="fancy__form" style="display: none;">
+                <picture class="proportional-picture">
+                    <source srcset="assets/images/about-us.avif" type="image/avif">
+                    <source srcset="assets/images/about-us.webp" type="image/webp">
+                    <img src="assets/images/about-us.png" alt="Картинка">
+                </picture>
+                <form action="#">
+                    <span class="h2">Записаться на консультацию</span>
+                    <div class="input__container">
+                        <input type="text" name="make-input" id="make-name" placeholder="Ваше имя">
+                    </div>
+                    <div class="input__container">
+                        <input type="text" name="make-input" id="make-telegram" placeholder="Ваш телеграм">
+                    </div>
+                    <button type="submit" class="button_icon">
+                        Отправить
+                        <svg>
+                            <use xlink:href="#right-arrow-icon"></use>
+                        </svg>
+                    </button>
+                    <div class="privacy-policy checkbox__container">
+                        <input type="checkbox" name="privacy-policy-agree" id="fancy-consultation-agree" required>
+                        <label for="fancy-consultation-agree">
+                            <span class="checkbox-icon">
+
+                            </span>
+                            <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div id="program" class="fancy__program" style="display: none;">
+                <div class="program__wrapper">
+                    <div class="program__heading__wrapper">
+                        <span class="program__number">03.</span>
+                        <span class="program__heading">Технологии повышения дохода</span>
+                    </div>
+                    <div class="text-content">
+                        <ul>
+                            <li>Проведем анализ Вашего финансового плана. Принципы корректировки финансового плана.</li>
+                            <li>Расчет необходимой чистой прибыли для Вашего целевого плана.</li>
+                            <li>10 технологий повышения источника дохода.</li>
+                            <li>Стратегия повышения дохода при работе по найму.</li>
+                            <li>Повышение дохода в своем деле и бизнесе.</li>
+                            <li>Создание и монетизация интеллектуального продукта.</li>
+                            <li>Анализ активов и пассивов. Правильное распределение для повышения дохода.</li>
+                            <li>Технологии повышения личной эффективности.</li>
+                            <li>Диверсификация бизнеса.</li>
+                            <li>Инвестирование.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <section class="course-banner-section">
                 <div class="container">
                     <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
@@ -35,8 +88,8 @@
                             <div class="course-banner__items__item application_item">
                                 <h2>Повышайте свой уровень жизни и достигайте поставленных целей в разы быстрее!</h2>
                                 <div class="banner__buttons">
-                                    <a href="#" class="main-button _contour">Посмотреть тарифы</a>
-                                    <a href="#" class="main-button">
+                                    <a href="#" class="main-button button_contour">Посмотреть тарифы</a>
+                                    <a href="#consultation" data-fancybox class="main-button button_icon">
                                         Получить консультацию
                                         <svg>
                                             <use xlink:href="#right-arrow-icon"></use>
@@ -506,26 +559,6 @@
                                 <a href="#program" data-fancybox class="absolute-link"></a>
                             </div>
                         </div>
-                        <div id="program" class="fancy__program" style="display: none;">
-                            <div class="program__heading__wrapper">
-                                <span class="program__number">03.</span>
-                                <span class="program__heading">Технологии повышения дохода</span>
-                            </div>
-                            <div class="text-content">
-                                <ul>
-                                    <li>Проведем анализ Вашего финансового плана. Принципы корректировки финансового плана.</li>
-                                    <li>Расчет необходимой чистой прибыли для Вашего целевого плана.</li>
-                                    <li>10 технологий повышения источника дохода.</li>
-                                    <li>Стратегия повышения дохода при работе по найму.</li>
-                                    <li>Повышение дохода в своем деле и бизнесе.</li>
-                                    <li>Создание и монетизация интеллектуального продукта.</li>
-                                    <li>Анализ активов и пассивов. Правильное распределение для повышения дохода.</li>
-                                    <li>Технологии повышения личной эффективности.</li>
-                                    <li>Диверсификация бизнеса.</li>
-                                    <li>Инвестирование.</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -547,7 +580,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="information-button" id="information-button" data-theme="information-button-dark">
+                                <div class="information-button" data-theme="information-button-dark">
                                     <svg>
                                         <use xlink:href="#info-icon"></use>
                                     </svg>
@@ -925,7 +958,7 @@
                                             <div class="video__content">
                                                 <p class="video__heading">Екатерина и Артур <br>Бухарметовы</p>
                                             </div>
-                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox-video data-caption="Видео"></a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -943,7 +976,7 @@
                                             <div class="video__content">
                                                 <p class="video__heading">Линар Аглиуллин</p>
                                             </div>
-                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox-video data-caption="Видео"></a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -961,7 +994,7 @@
                                             <div class="video__content">
                                                 <p class="video__heading">Айрат Тухватуллин</p>
                                             </div>
-                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox-video data-caption="Видео"></a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -979,7 +1012,7 @@
                                             <div class="video__content">
                                                 <p class="video__heading">Сергей Чурбанов</p>
                                             </div>
-                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox="video-gallery" data-caption="Видео"></a>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox-video data-caption="Видео"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1095,7 +1128,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="information-button" id="information-button" data-theme="information-button-light">
+                            <div class="information-button" data-theme="information-button-light">
                                 <svg>
                                     <use xlink:href="#info-icon"></use>
                                 </svg>
@@ -1137,7 +1170,7 @@
                                             <input type="email" name="subscription-input" id="subscription-mail" placeholder="Ваша почта" data-id="email">
                                             <input type="text" name="subscription-input" id="subscription-telegram" placeholder="Ваш телеграм" data-id="telegram" style="display: none;">
                                         </div>
-                                        <button type="submit">
+                                        <button type="submit" class="button_icon">
                                             Подписаться
                                             <svg>
                                                 <use xlink:href="#right-arrow-icon"></use>
@@ -1216,7 +1249,7 @@
    <script src="assets/js/fancybox.umd.js"></script>
    <script src="assets/js/popper.min.js"></script>
    <script src="assets/js/tippy.umd.min.js"></script>
-   <script src="assets/js/video.min.js"></script>
+   <script src="assets/js/imask.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>

@@ -11,6 +11,26 @@
    <div class="wrapper">
         @@include('../parts/header.html')
         <main>
+            <div id="vacancy" class="fancy__vacancy" style="display: none;">
+                <p class="vacancy__heading">Менеджер</p>
+                <div class="text-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Eros blandit morbi sit augue aenean quisque 
+                        eu. Amet diam nunc nisl tortor. Et elit proin dui dui est elementum lobortis. Non 
+                        tristique malesuada tempor nam augue non sem feugiat massa. Amet diam nunc nisl 
+                        tortor. Et elit proin dui dui est elementum lobortis. Non tristique malesuada 
+                        tempor nam augue non sem feugiat massa. Amet diam nunc nisl tortor. Et elit 
+                        proin dui dui est elementum lobortis. Non tristique malesuada tempor nam augue 
+                        non sem feugiat massa. eugiat m.
+                    </p>
+                </div>
+                <a href="#" class="main-button button_icon">
+                    Связаться
+                    <svg>
+                        <use xlink:href="#right-arrow-icon"></use>
+                    </svg>
+                </a>
+            </div>
             <section class="about-us-section">
                 <div class="container">
                     <div class="container__content">
@@ -31,11 +51,13 @@
                                     </p>
                                 </div>
                             </div>
-                            <picture class="proportional-picture about-us-banner two-columns__column" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0">
-                                <source srcset="assets/images/about-us.avif" type="image/avif">
-                                <source srcset="assets/images/about-us.webp" type="image/webp">
-                                <img src="assets/images/about-us.png" alt="Картинка">
-                            </picture>
+                            <div class="two-columns__column about-us-banner" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0">
+                                <picture class="proportional-picture">
+                                    <source srcset="assets/images/about-us.avif" type="image/avif">
+                                    <source srcset="assets/images/about-us.webp" type="image/webp">
+                                    <img src="assets/images/about-us.png" alt="Картинка">
+                                </picture>
+                            </div>
                         </div>
                         <div class="swiper-container swiper-persons" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                             <div class="swiper-navigation">
@@ -66,7 +88,7 @@
                                             </p>
                                             <div class="load-more">
                                                 <div class="load-more__main-part">
-                                                    <div class="text-content">
+                                                    <div class="text-wrapper">
                                                         <ul>
                                                             <li>с 2009 г. прошел карьеру от финансового консультанта до регионального директора в сфере страхование жизни;</li>
                                                             <li>в 2011 г. основал Центр Финансового Развития «Big LIFE»;</li>
@@ -76,7 +98,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="load-more__hidden-part" style="display: none;">
-                                                    <div class="text-content">
+                                                    <div class="text-wrapper">
                                                         <ul>
                                                             <li>провел более 15 000 консультаций для построения капитала и пассивного дохода;</li>
                                                             <li>выступил на 1000 конференциях и семинарах;</li>
@@ -114,7 +136,7 @@
                                             </p>
                                             <div class="load-more">
                                                 <div class="load-more__main-part">
-                                                    <div class="text-content">
+                                                    <div class="text-wrapper">
                                                         <ul>
                                                             <li>более 20 лет опыта работы с финансами, высшее экономическое образование;</li>
                                                             <li>с 2019 г. эксперт по банковским продуктам;</li>
@@ -124,7 +146,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="load-more__hidden-part" style="display: none;">
-                                                    <div class="text-content">
+                                                    <div class="text-wrapper">
                                                         <ul>
                                                             <li>в 2020 г. разработала авторский курс по управлению банковскими и кредитными продуктами 
                                                                 - как получить деньги без процентов на длительный период для бизнеса, инвестиций и любых личных целей;</li>
@@ -239,7 +261,7 @@
                             </div>
                             <div class="two-columns__column vacancy__items" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0">
                                 <div class="vacancy__items__item">
-                                    <a href="#" class="vacancy__button">
+                                    <a href="#vacancy" data-fancybox class="vacancy__button">
                                         Менеджер
                                         <svg>
                                             <use xlink:href="#right-arrow-icon"></use>
@@ -247,7 +269,7 @@
                                     </a>
                                 </div>
                                 <div class="vacancy__items__item">
-                                    <a href="#" class="vacancy__button">
+                                    <a href="#vacancy" data-fancybox class="vacancy__button">
                                         Специалист по соц. сетям
                                         <svg>
                                             <use xlink:href="#right-arrow-icon"></use>
@@ -350,7 +372,7 @@
                                             <input type="email" name="subscription-input" id="subscription-mail" placeholder="Ваша почта" data-id="email">
                                             <input type="text" name="subscription-input" id="subscription-telegram" placeholder="Ваш телеграм" data-id="telegram" style="display: none;">
                                         </div>
-                                        <button type="submit">
+                                        <button type="submit" class="button_icon">
                                             Подписаться
                                             <svg>
                                                 <use xlink:href="#right-arrow-icon"></use>
@@ -429,7 +451,7 @@
    <script src="assets/js/fancybox.umd.js"></script>
    <script src="assets/js/popper.min.js"></script>
    <script src="assets/js/tippy.umd.min.js"></script>
-   <script src="assets/js/video.min.js"></script>
+   <script src="assets/js/imask.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>

@@ -74,13 +74,23 @@ $(document).ready(function(){
             toggleBurger();
         }
     });
-    let financeSelectOrigin = document.querySelector('[name="finance-select"]');
-    if(financeSelectOrigin !== null && financeSelectOrigin !== undefined) {
-        let financeSelect = new Choices(financeSelectOrigin, {
-            searchEnabled: false,
-            allowHTML: true,
-            shouldSort: false,
-        })
+    let selects = document.querySelectorAll('.wrapper select');
+    if(selects.length > 0) {
+        selects.forEach(select => {
+            new Choices(select, {
+                searchEnabled: false,
+                allowHTML: true,
+                shouldSort: false,
+            });
+        });
+    }
+    let inputsPhone = document.querySelectorAll('input[type="tel"]');
+    if(inputsPhone.length > 0) {
+        inputsPhone.forEach(input => {
+            IMask(input, {
+                mask: '+{7} (000) 000-00-00'
+            });
+        });
     }
     let loadMoreButtons = document.querySelectorAll('.load-more__button');
     $('.load-more__button').click(function(e){
@@ -312,7 +322,7 @@ $(document).ready(function(){
             },
         });
     }
-    const informationButtons = document.querySelectorAll('#information-button');
+    const informationButtons = document.querySelectorAll('.information-button');
     if(informationButtons.length > 0) {
         informationButtons.forEach(button => {
             tippy(button, {
@@ -345,7 +355,10 @@ $(document).ready(function(){
         });
     }
     Fancybox.bind('[data-fancybox]', {
-        
+        mainClass: 'fancybox__popup',
+    });
+    Fancybox.bind('[data-fancybox-video]', {
+        mainClass: 'fancybox__video',
     });
     function itemsHoverClickAnimation(items, itemClass) {
         if(items.length > 0) {

@@ -13,10 +13,10 @@
     <div class="container">
         <div class="logotype">
             <picture class="logotype__first-part">
-                <img src="assets/images/logotype-first-part.svg">
+                <img src="assets/images/logotype-first-part.svg" alt="logotype">
             </picture>
             <picture class="logotype__second-part">
-                <img src="assets/images/logotype-second-part.svg">
+                <img src="assets/images/logotype-second-part.svg" alt="logotype">
             </picture>
             <a href="index.html" class="absolute-link"></a>
         </div>
@@ -61,6 +61,37 @@
     </div>
 </header>
         <main>
+            <div id="consultation" class="fancy__form" style="display: none;">
+                <picture class="proportional-picture">
+                    <source srcset="assets/images/about-us.avif" type="image/avif">
+                    <source srcset="assets/images/about-us.webp" type="image/webp">
+                    <img src="assets/images/about-us.png" alt="Картинка">
+                </picture>
+                <form action="#">
+                    <span class="h2">Записаться на консультацию</span>
+                    <div class="input__container">
+                        <input type="text" name="make-input" id="make-name" placeholder="Ваше имя">
+                    </div>
+                    <div class="input__container">
+                        <input type="text" name="make-input" id="make-telegram" placeholder="Ваш телеграм">
+                    </div>
+                    <button type="submit" class="button_icon">
+                        Отправить
+                        <svg>
+                            <use xlink:href="#right-arrow-icon"></use>
+                        </svg>
+                    </button>
+                    <div class="privacy-policy checkbox__container">
+                        <input type="checkbox" name="privacy-policy-agree" id="fancy-consultation-agree" required>
+                        <label for="fancy-consultation-agree">
+                            <span class="checkbox-icon">
+
+                            </span>
+                            <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
             <section class="invest-banner-section">
                 <div class="container">
                     <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
@@ -81,8 +112,8 @@
                                 <div class="item__content">
                                     <h2>Мы даем <mark>реальные результаты</mark>, составляя широкий инвестиционный портфель из финансовых инструментов</h2>
                                 </div>
-                                <a href="#" class="main-button">
-                                    Получить консультацию
+                                <a href="#consultation" data-fancybox class="main-button button_icon">
+                                    Оставить заявку
                                     <svg>
                                         <use xlink:href="#right-arrow-icon"></use>
                                     </svg>
@@ -422,7 +453,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="information-button" id="information-button" data-theme="information-button-light">
+                            <div class="information-button" data-theme="information-button-light">
                                 <svg>
                                     <use xlink:href="#info-icon"></use>
                                 </svg>
@@ -464,7 +495,7 @@
                                             <input type="email" name="subscription-input" id="subscription-mail" placeholder="Ваша почта" data-id="email">
                                             <input type="text" name="subscription-input" id="subscription-telegram" placeholder="Ваш телеграм" data-id="telegram" style="display: none;">
                                         </div>
-                                        <button type="submit">
+                                        <button type="submit" class="button_icon">
                                             Подписаться
                                             <svg>
                                                 <use xlink:href="#right-arrow-icon"></use>
@@ -539,10 +570,10 @@
             <div class="footer__items__item footer_logotype">
                 <div class="logotype">
                     <picture class="logotype__first-part">
-                        <img src="assets/images/logotype-first-part.svg">
+                        <img src="assets/images/logotype-first-part.svg" alt="logotype">
                     </picture>
                     <picture class="logotype__second-part">
-                        <img src="assets/images/logotype-second-part.svg">
+                        <img src="assets/images/logotype-second-part.svg" alt="logotype">
                     </picture>
                     <a href="index.html" class="absolute-link"></a>
                 </div>
@@ -586,7 +617,7 @@
                     <div class="input__container">
                         <input type="text" name="consultation-input" id="consultation-telegram" placeholder="Ваш телеграм">
                     </div>
-                    <button type="submit">
+                    <button type="submit" class="button_icon">
                         Отправить
                         <svg>
                             <use xlink:href="#right-arrow-icon"></use>
@@ -620,7 +651,7 @@
    <script src="assets/js/fancybox.umd.js"></script>
    <script src="assets/js/popper.min.js"></script>
    <script src="assets/js/tippy.umd.min.js"></script>
-   <script src="assets/js/video.min.js"></script>
+   <script src="assets/js/imask.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>
