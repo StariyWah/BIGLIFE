@@ -11,6 +11,37 @@
    <div class="wrapper">
         @@include('../parts/header.html')
         <main>
+            <div id="consultation" class="fancy__form" style="display: none;">
+                <picture class="proportional-picture">
+                    <source srcset="assets/images/about-us.avif" type="image/avif">
+                    <source srcset="assets/images/about-us.webp" type="image/webp">
+                    <img src="assets/images/about-us.png" alt="Картинка">
+                </picture>
+                <form action="#">
+                    <span class="h2">Записаться на консультацию</span>
+                    <div class="input__container">
+                        <input type="text" name="make-input" id="make-name" placeholder="Ваше имя">
+                    </div>
+                    <div class="input__container">
+                        <input type="text" name="make-input" id="make-telegram" placeholder="Ваш телеграм">
+                    </div>
+                    <button type="submit" class="button_icon">
+                        Отправить
+                        <svg>
+                            <use xlink:href="#right-arrow-icon"></use>
+                        </svg>
+                    </button>
+                    <div class="privacy-policy checkbox__container">
+                        <input type="checkbox" name="privacy-policy-agree" id="fancy-consultation-agree" required>
+                        <label for="fancy-consultation-agree">
+                            <span class="checkbox-icon">
+
+                            </span>
+                            <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
             <section class="information-section undefined-section">
                 <div class="container">
                     <div class="container__content" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">

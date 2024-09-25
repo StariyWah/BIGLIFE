@@ -91,7 +91,7 @@ function watching() {
 function images() {
     return src([`${ links.imagesSrc }/*.{png,jpg,jpeg}`])
         .pipe(newer(links.imagesDist))
-        .pipe(avif({quality: 60}))
+        .pipe(avif({quality: 100}))
         .pipe(newer(links.imagesDist))
         .pipe(src([`${ links.imagesSrc }/*.{png,jpg,jpeg}`]))
         .pipe(webp())

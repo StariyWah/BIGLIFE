@@ -82,9 +82,9 @@
                                     <img src="assets/images/technology-banner-small.png" alt="Картинка">
                                 </picture>
                             </div>
-                            <div class="technology-banner__items__item item_unique custom-list">
+                            <div class="technology-banner__items__item item_unique">
                                 <h3>Сделайте шаг к исполнению своих целей и мечтаний</h3>
-                                <ol>
+                                <ol class="custom-list">
                                     <li>Без процентов </li>
                                     <li>На длительный срок</li>
                                 </ol>
@@ -273,7 +273,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="information-button" data-theme="information-button-dark">
+                                <div class="information-button" data-theme="information-button-dark-green">
                                     <svg>
                                         <use xlink:href="#info-icon"></use>
                                     </svg>
@@ -482,7 +482,7 @@
             <section class="clients-results-section">
                 <div class="container">
                     <div class="container__content">
-                        <div class="swiper-container swiper-clients-results" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
+                        <div class="swiper-container swiper-clients-results">
                             <div class="section__heading" data-aos="fade" data-aos-duration="1000" data-aos-offset="0">
                                 <h2>Результаты наших клиентов</h2>
                                 <div class="swiper-navigation">
@@ -498,7 +498,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper">
+                            <div class="swiper" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="client-result__items">
@@ -548,36 +548,62 @@
                                                     <img src="assets/images/background-lines-7.svg" alt="Картинка">
                                                 </picture>
                                                 <picture class="client__avatar">
-                                                    <source srcset="assets/images/client-5.avif" type="image/avif">
-                                                    <source srcset="assets/images/client-5.webp" type="image/webp">
-                                                    <img src="assets/images/client-5.png" alt="Картинка">
+                                                    <source srcset="assets/images/client-6.avif" type="image/avif">
+                                                    <source srcset="assets/images/client-6.webp" type="image/webp">
+                                                    <img src="assets/images/client-6.png" alt="Картинка">
                                                 </picture>
-                                                <span class="client__name">Ирина Зверева</span>
-                                                <span class="client__description">Старшая медсестра</span>
+                                                <span class="client__name">Наталья</span>
                                             </div>
                                             <div class="client-result__items__item item_before">
                                                 <span class="client__heading">ТОЧКА а</span>
                                                 <ul>
-                                                    <li>За 20 дней нужно было найти 200 000 рублей</li>
-                                                    <li>Ежемесячные платежи по 5 кредитам на общую сумму 30 000 рублей в месяц</li>
-                                                    <li>Долг по кредитным картам — 170 000 рублей</li>
-                                                    <li>Накопления — 34 000 рублей</li>
-                                                    <li>За 20 дней нужно было найти 200 000 рублей</li>
-                                                    <li>Ежемесячные платежи по 5 кредитам на общую сумму 30 000 рублей в месяц</li>
-                                                    <li>Долг по кредитным картам — 170 000 рублей</li>
-                                                    <li>Накопления — 34 000 рублей</li>
+                                                    <li>Взяла 600 000 рублей в кредит на машину по 19% годовых на 3 года</li>
+                                                    <li>Ежемесячный платеж 22 000 рублей</li>
+                                                    <li>Итоговая переплата — 200 000 рублей</li>
                                                 </ul>
                                             </div>
                                             <div class="client-result__items__item item_after">
                                                 <span class="client__heading">ТОЧКА Б</span>
                                                 <ul>
-                                                    <li>Мы проанализировали ситуацию и нашли на других кредитках свободные 
-                                                        деньги на своевременное погашение кредитных обязательств</li>
-                                                    <li>Составили для Ирины пошаговый план, как использовать эти 
-                                                        средства, не платя проценты</li>
-                                                    <li>Погасили кредитные платежи и дополнительно на руки получили 80 000 
-                                                        рублей и сразу вложили в 4 надежных источника пассивного дохода</li>
-                                                    <li>При этом не использовали личные накопления вообще</li>
+                                                    <li>Мы предложили вариант, как за счет нашей технологии сократить срок и избежать переплат</li>
+                                                    <li>В итоге за счет средств с 3-х кредитных карт закрыли кредит</li>
+                                                    <li>Наталья будет платить те же 22 000 рублей в месяц, но закроет задолженность за 27 месяцев, то есть чуть более 2-х лет вместо 3-х</li>
+                                                    <li>Полностью избежали переплаты в 200.000₽</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-result__items">
+                                            <div class="client-result__items__item item_about">
+                                                <picture class="background-picture">
+                                                    <source media="(min-width:1440px)" srcset="assets/images/background-lines-9.svg">
+                                                    <source media="(min-width:701px)" srcset="assets/images/background-lines-8.svg">
+                                                    <img src="assets/images/background-lines-7.svg" alt="Картинка">
+                                                </picture>
+                                                <picture class="client__avatar">
+                                                    <source srcset="assets/images/client-7.avif" type="image/avif">
+                                                    <source srcset="assets/images/client-7.webp" type="image/webp">
+                                                    <img src="assets/images/client-7.png" alt="Картинка">
+                                                </picture>
+                                                <span class="client__name">Максим</span>
+                                            </div>
+                                            <div class="client-result__items__item item_before">
+                                                <span class="client__heading">ТОЧКА а</span>
+                                                <ul>
+                                                    <li>Воспользовался средствами с 5 кредитных карт, общей суммой 600 000 рублей, и по ним заканчивался льготный период</li>
+                                                    <li>Решил рефинансировать задолженность</li>
+                                                    <li>Ежемесячный платеж — 17 000 рублей</li>
+                                                    <li>Переплата за 5 лет — 300 000 рублей</li>
+                                                </ul>
+                                            </div>
+                                            <div class="client-result__items__item item_after">
+                                                <span class="client__heading">ТОЧКА Б</span>
+                                                <ul>
+                                                    <li>Мы проанализировали текущую ситуацию и показали, как закрыть задолженность быстрее и вообще без переплат</li>
+                                                    <li>В итоге Максим, как и планировал, ежемесячно будет платить 17 000 рублей</li>
+                                                    <li>Закроет задолженность за 35 месяцев — за 3 года вместо 5 лет</li>
+                                                    <li>Переплата составит 0 рублей, тем самым мы помогли сэкономить 300 000 рублей</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -798,7 +824,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="information-button" id="information-button" data-theme="information-button-light">
+                            <div class="information-button" id="information-button" data-theme="information-button-light-green">
                                 <svg>
                                     <use xlink:href="#info-icon"></use>
                                 </svg>

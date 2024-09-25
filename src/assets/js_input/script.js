@@ -56,6 +56,24 @@ new class Tabs {
     }
 };
 $(document).ready(function(){
+    $(document).on('click', '[data-anchor]', function(e){
+        e.preventDefault();
+        let href = $(this).attr('href');
+        if (href !== undefined && $(href).length > 0) {
+            $('html, body').stop().animate(
+                {
+                    scrollTop: $(href).offset().top - 30,
+                },
+                {
+                    duration: 1000,
+                    specialEasing: {
+                        width: 'linear',
+                        height: 'easeInOutCubic',
+                    },
+                }
+            );
+        }
+    });
     AOS.init({
         once: true,
     });
