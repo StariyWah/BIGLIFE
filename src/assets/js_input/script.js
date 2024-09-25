@@ -76,6 +76,9 @@ $(document).ready(function(){
     });
     AOS.init({
         once: true,
+        duration: 1000,
+        delay: 50,
+        easing: 'ease-in-out',
     });
     useDynamicAdapt();
     function toggleBurger() {

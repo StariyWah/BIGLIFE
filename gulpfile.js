@@ -135,7 +135,7 @@ function scripts() {
 
 //Стили css
 function styles() {
-    return src([`${links.scssSrc}/fonts.scss`, `${links.scssSrc}/plugins/*.css`, `${links.scssSrc}/*.scss`])
+    return src([`${links.scssSrc}/fonts.scss`, `${links.scssSrc}/plugins/*.css`, `${links.scssSrc}/*.scss`, `${links.scssSrc}/plugins/aos.css`])
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(autoprefixer({
             cascade: false
