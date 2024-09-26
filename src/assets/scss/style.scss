@@ -766,6 +766,85 @@ body {
                 margin-bottom: 0;
             }
         }
+        & .text-content-main {
+            & > * {
+                margin-bottom: 24px;
+                & li {
+                    line-height: 171%;
+                }
+            }
+            & > *:not(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6) {
+                line-height: 171%;
+            }
+            & h2, & .h2 {
+                font-size: var(--font-size--h2);
+            }
+            & h3, & .h3 {
+                
+            }
+            & h4, & .h4 {
+                
+            }
+            & h5, & .h5 {
+                
+            }
+            & h6, & .h6 {
+                
+            }
+            & h1, & .h1, & h2, & .h2, & h3, & .h3, & h4, & .h4, & h5, & .h5, & h6, & .h6 {
+                overflow-wrap: break-word;
+                margin-bottom: 16px;
+                line-height: 133%;
+            }
+            & ul, & ol {
+                & li, & li > * {
+                }
+                & li {
+                    margin-bottom: 2px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            & hr {
+            }
+            & b, & .bold, & strong {
+                font-weight: 600;
+            }
+            & blockquote, & q {
+    
+            }
+            & p {
+            }
+            & a {
+    
+            }
+            & a[href]:not(.main-button) {
+                transition: all var(--transition--main);
+                text-decoration: underline;
+                &:hover {
+                    color: var(--color--blue);
+                }
+            }
+            & span {
+    
+            }
+            & time {
+    
+            }
+            & label {
+    
+            }
+            & input, & textarea {
+    
+            }
+            & .main-button, & button {
+
+            }
+            & > *:last-child {
+                margin-bottom: 0;
+            }
+        }
         //black-items
         & .subscription-form__container,
         & .swiper-persons .swiper-slide,
@@ -1030,8 +1109,8 @@ body {
         }
         & footer ul li {
             & a[href] {
-                padding: 8px 16px;
-                margin-left: -16px;
+                padding: 8px 10px;
+                margin-left: -10px;
             }
         }
         & header {
@@ -2306,15 +2385,20 @@ body {
                 gap: 24px;
             }
             & .vacancy__items {
-                display: grid;
-                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-                gap: 8px;
+                justify-content: center;
                 padding: 19px 16px;
+                min-height: 230px;
             }
             & .vacancy__items__item {
                 display: flex;
                 width: 100%;
+                margin-bottom: 8px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
             & .vacancy__button {
                 padding: 12px 10px 11px 8px;
@@ -2326,6 +2410,11 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                &[href] {
+                    &:hover {
+                        color: var(--color--white);
+                    }
+                }
                 & svg {
                     max-width: 20px;
                     min-width: 20px;
@@ -4219,6 +4308,72 @@ body {
                     }
                 }
             }
+            & .text-content-main {
+                & > * {
+                    margin-bottom: 32px;
+                    & li {
+                        line-height: 150%;
+                    }
+                }
+                & > *:not(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6) {
+                    line-height: 150%;
+                }
+                & h2, & .h2 {
+                }
+                & h3, & .h3 {
+                    
+                }
+                & h4, & .h4 {
+                    
+                }
+                & h5, & .h5 {
+                    
+                }
+                & h6, & .h6 {
+                    
+                }
+                & h1, & .h1, & h2, & .h2, & h3, & .h3, & h4, & .h4, & h5, & .h5, & h6, & .h6 {
+                    line-height: 114%;
+                    margin-bottom: 24px;
+                }
+                & ul, & ol {
+                    & li, & li > * {
+                    }
+                    & li {
+                    }
+                }
+                & hr {
+                }
+                & b, & .bold, & strong {
+                }
+                & blockquote, & q {
+        
+                }
+                & p {
+                }
+                & a {
+        
+                }
+                & a[href]:not(.main-button) {
+                }
+                & span {
+        
+                }
+                & time {
+        
+                }
+                & label {
+        
+                }
+                & input, & textarea {
+        
+                }
+                & .main-button, & button {
+    
+                }
+                & > *:last-child {
+                }
+            }
             & .icon-minus, & .icon-plus {
                 max-width: 24px;
                 min-width: 24px;
@@ -4242,6 +4397,12 @@ body {
             }
             & main {
                 padding-top: 40px;
+            }
+            & footer ul li {
+                & a[href] {
+                    padding: 8px 16px;
+                    margin-left: -16px;
+                }
             }
             & header {
                 & .header__content {
@@ -4990,11 +5151,10 @@ body {
                     gap: 40px;
                 }
                 & .vacancy__items {
-                    gap: 40px;
                     padding: 123px 31px;
                 }
                 & .vacancy__items__item {
-                    
+                    margin-bottom: 40px;
                 }
                 & .vacancy__button {
                     padding: 19px 24px 18px 0;
@@ -6080,6 +6240,68 @@ body {
             }
         }
         & .wrapper, & .fancybox__content {
+            & .text-content-main {
+                & > * {
+                    margin-bottom: 40px;
+                }
+                & > *:not(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6) {
+                }
+                & h2, & .h2 {
+                }
+                & h3, & .h3 {
+                    
+                }
+                & h4, & .h4 {
+                    
+                }
+                & h5, & .h5 {
+                    
+                }
+                & h6, & .h6 {
+                    
+                }
+                & h1, & .h1, & h2, & .h2, & h3, & .h3, & h4, & .h4, & h5, & .h5, & h6, & .h6 {
+                    line-height: 106%;
+                    margin-bottom: 32px;
+                }
+                & ul, & ol {
+                    & li, & li > * {
+                    }
+                    & li {
+                    }
+                }
+                & hr {
+                }
+                & b, & .bold, & strong {
+                }
+                & blockquote, & q {
+        
+                }
+                & p {
+                }
+                & a {
+        
+                }
+                & a[href]:not(.main-button) {
+                }
+                & span {
+        
+                }
+                & time {
+        
+                }
+                & label {
+        
+                }
+                & input, & textarea {
+        
+                }
+                & .main-button, & button {
+    
+                }
+                & > *:last-child {
+                }
+            }
             & .information-button {
                 border-radius: 0;
                 max-width: initial;
