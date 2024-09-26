@@ -3235,10 +3235,10 @@ body {
                 flex-direction: column;
                 & picture {
                     max-width: 24px;
-                    height: 24px;
                     margin-bottom: 12px;
                     & img {
                         border-radius: 0;
+                        height: 100%;
                     }
                 }
                 & ul {
@@ -5591,7 +5591,6 @@ body {
                     padding: 39px 31px;
                     & picture {
                         max-width: 46px;
-                        height: 46px;
                         margin-bottom: 70px;
                     }
                     & ul {
@@ -7343,7 +7342,6 @@ body {
                 & .finance-directions__items__item {
                     & picture {
                         max-width: 48px;
-                        height: 48px;
                         margin-bottom: 57px;
                     }
                     & ul {
