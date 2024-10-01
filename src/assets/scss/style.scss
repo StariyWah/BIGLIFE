@@ -1701,6 +1701,9 @@ body {
             height: fit-content;
             gap: 5px;
             padding: 5px;
+            &, & * {
+                user-select: none;
+            }
         }
         & .input__container_radio {
             display: flex;

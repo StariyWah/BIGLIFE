@@ -74,12 +74,6 @@ $(document).ready(function(){
             );
         }
     });
-    AOS.init({
-        once: true,
-        duration: 1000,
-        delay: 50,
-        easing: 'ease-in-out',
-    });
     useDynamicAdapt();
     function toggleBurger() {
         $('body').toggleClass('_header-lock');
@@ -417,4 +411,10 @@ $(document).ready(function(){
     itemsHoverClickAnimation(willLearnItems, '.will-learn__items__item');
     let gamesInformationItems = document.querySelectorAll('.games-information__items__item');
     itemsHoverClickAnimation(gamesInformationItems, '.games-information__items__item');
+    AOS.init({
+        once: true,
+        duration: 1000,
+        delay: 50,
+        easing: 'ease-in-out',
+    });
 });
