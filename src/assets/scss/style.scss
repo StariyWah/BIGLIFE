@@ -131,7 +131,7 @@ html, body {
         }
     }
     &[data-theme="header-tooltip"] {
-        width: max-content;
+        width: 100%;
         & .tippy-content {
             padding: 8px;
             background-color: var(--color--white);
@@ -157,15 +157,19 @@ html, body {
                     text-align: start;
                     text-transform: initial;
                     width: 100%;
+                    text-decoration: initial;
                 }
                 & a {
                     padding: 8px 16px;
                     margin: 0;
                     transition: all var(--transition--main);
                     border-radius: 8px;
-                    &:hover {
+                    &:hover, &._current {
                         color: var(--color--blue);
                         background-color: var(--color--light-gray);
+                    }
+                    &._current {
+                        pointer-events: none;
                     }
                 }
             }
@@ -1092,18 +1096,17 @@ body {
                 background-color: var(--color--light-gray);
             }
         }
-        & .header-nav, & footer ul li {
-            & a[href] {
+        & .header-nav > li, & footer ul li {
+            & > a[href] {
                 transition: all var(--transition--main);
                 border-radius: 8px;
                 padding: 12px 7px;
-                &:hover {
+                &:hover, &._current {
                     background-color: var(--color--white);
                     color: var(--color--blue);
                 }
-                &:active {
-                    background-color: var(--color--light-gray);
-                    color: var(--color--blue);
+                &._current {
+                    pointer-events: none;
                 }
             }
         }
@@ -1247,21 +1250,23 @@ body {
                     margin-left: auto;
                 }
                 & .header__tooltip {
-                    margin: 0 0 36px auto;
+                    margin: 0 0 0 auto;
                 }
                 & .header-nav {
                     display: flex;
                     flex-direction: column;
-                    margin-bottom: 48px;
-                    & li, & a {
+                    margin-bottom: 36px;
+                    & > li, & > li > a {
                         text-transform: uppercase;
                         line-height: 100%;
                         font-size: 1rem;
                         text-align: end;
                     }
-                    & li {
+                    & > li {
+                        display: flex;
+                        justify-content: flex-end;
                         list-style: none;
-                        margin-bottom: 48px;
+                        margin-bottom: 24px;
                         &:last-of-type {
                             margin-bottom: 0;
                         }
@@ -1657,7 +1662,7 @@ body {
             & input, & textarea {
                 width: 100%;
             }
-            & .form__part_radio {
+            & .form__part_radio, & .form__part_subscribe__type {
                 margin-right: 5px;
             }
         }
@@ -1666,7 +1671,7 @@ body {
             & .input__container, & .choices {
                 margin-bottom: 16px;
             }
-            & .input__container_radio {
+            & .input__container_radio, & .input__container_link {
                 margin-bottom: 0;
             }
             & > *:last-child {
@@ -1690,7 +1695,7 @@ body {
             }
 
         }
-        & .form__part_radio {
+        & .form__part_radio, & .form__part_subscribe__type {
             display: grid;
             grid-auto-flow: column;
             grid-auto-columns: max-content;
@@ -1705,7 +1710,7 @@ body {
                 user-select: none;
             }
         }
-        & .input__container_radio {
+        & .input__container_radio, & .input__container_link {
             display: flex;
             position: relative;
             cursor: pointer;
@@ -1722,6 +1727,7 @@ body {
                 min-width: 30px;
                 width: 100%;
                 height: 30px;
+                transition: all var(--transition--main);
             }
             & svg {
                 max-width: 20px;
@@ -1735,6 +1741,13 @@ body {
             }
             & input {
                 display: none;
+            }
+        }
+        & .input__container_link {
+            &:hover {
+                &::before {
+                    background-color: var(--color--blue);
+                }
             }
         }
         & .checkbox__container {
@@ -4438,24 +4451,24 @@ body {
                     }
                 }
                 & .header-nav__container {
-                    padding: 60px 30px;
+                    padding: 48px 30px;
                     max-width: 350px;
                     width: 100%;
                     & .header-nav {
                         margin-bottom: 0;
                     }
                     & .header__tooltip {
-                        align-self: center;
-                        margin: -12px -13px 48px -13px;
+                        margin: 0 -13px 0 -13px;
                     }
                     & .header-nav {
-                        & li, & a {
+                        & > li, & > li > a {
                             text-align: center;
                         }
                         & a {
                         }
-                        & li {
-                            margin-bottom: 60px;
+                        & > li {
+                            justify-content: center;
+                            margin-bottom: 36px;
                         }
                     }
                 }
@@ -4717,7 +4730,7 @@ body {
             }
             & .form__part_subscribe {
                 margin-bottom: 24px;
-                & .form__part_radio {
+                & .form__part_radio, & .form__part_subscribe__type {
                     margin-right: 10px;
                 }
             }
@@ -4742,12 +4755,12 @@ body {
                     }
                 }   
             }
-            & .form__part_radio {
+            & .form__part_radio, & .form__part_subscribe__type {
                 background-color: var(--color--black-second);
                 gap: 9px;
                 padding: 9px;
             }
-            & .input__container_radio {
+            & .input__container_radio, & .input__container_link {
                 &._checked {
                     &::before {
                         background-color: var(--color--white);
@@ -4758,6 +4771,13 @@ body {
                 }
                 & svg {
                     fill: var(--color--black);
+                }
+            }
+            & .input__container_link {
+                &:hover {
+                    &::before {
+                        background-color: var(--color--white);
+                    }
                 }
             }
             & .checkbox__container {
@@ -6414,7 +6434,7 @@ body {
                     transform: initial;
                     border-radius: 0;
                     & .header__tooltip {
-                        margin: 0 30px 0 0;
+                        margin: 0 5px 0 0;
                     }
                     & .header-nav {
                         display: grid;
@@ -6423,13 +6443,13 @@ body {
                         gap: 20px 25px;
                         & a[href] {
                         }
-                        & li, & a {
+                        & > li, & > li > a {
                             text-align: center;
                             min-width: 128px;
                         }
                         & a {
                         }
-                        & li {
+                        & > li {
                             display: flex;
                             margin-bottom: 0;
                         }
@@ -6609,9 +6629,9 @@ body {
                     }
                 }   
             }
-            & .form__part_radio {
+            & .form__part_radio, & .form__part_subscribe__type {
             }
-            & .input__container_radio {
+            & .input__container_radio, & .input__container_link {
                 &._checked {
                     &::before {
                     }

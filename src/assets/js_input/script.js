@@ -354,20 +354,40 @@ $(document).ready(function(){
             });
         });
     }
-    const headerTooltip = document.getElementById('header-tooltip');
-    if(headerTooltip !== null && headerTooltip !== undefined) {
-        tippy(headerTooltip, {
-            content: headerTooltip.querySelector('.header__tooltip__content').innerHTML,
-            allowHTML: true,
-            arrow: false,
-            placement: 'bottom-start',
-            offset: [0, 0],
-            zIndex: 9999,
-            trigger: 'click',
-            theme: $(headerTooltip).attr('data-theme'),
-            maxWidth: 327,
-            interactive: true,
+    const headerTooltips = document.querySelectorAll('#header-tooltip');
+    if(headerTooltips.length > 0) {
+        headerTooltips.forEach(tooltip => {
+            tippy(tooltip, {
+                content: tooltip.querySelector('.header__tooltip__content').innerHTML,
+                allowHTML: true,
+                arrow: false,
+                placement: 'bottom-start',
+                offset: [0, 19],
+                zIndex: 9999,
+                trigger: 'click',
+                theme: $(tooltip).attr('data-theme'),
+                maxWidth: 327,
+                appendTo: () => document.querySelector('.burger-menu'),
+                interactive: true,
+            });
         });
+    }
+    Fancybox.defaults.l10n = {
+        CLOSE: "Закрыть",
+        NEXT: "Следующий",
+        PREV: "Предыдущий",
+        MODAL: "Вы можете закрыть окно нажатием ESC",
+        ERROR: "Ошибка, попробуйте повторить попытку",
+        IMAGE_ERROR: "Изображение не найдено",
+        ELEMENT_NOT_FOUND: "HTML элемент не найден",
+        AJAX_NOT_FOUND: "Ошибка загрузки AJAX: Не найдено",
+        AJAX_FORBIDDEN: "Ошибка загрузки AJAX: Запрещено",
+        IFRAME_ERROR: "Ошибка при загрузке фрейма",
+        TOGGLE_ZOOM: "Приблизить",
+        TOGGLE_THUMBS: "Миниатюры",
+        TOGGLE_SLIDESHOW: "Слайдшоу",
+        TOGGLE_FULLSCREEN: "Полноэкранный режим",
+        DOWNLOAD: "Загрузить"
     }
     Fancybox.bind('[data-fancybox]', {
         mainClass: 'fancybox__popup',

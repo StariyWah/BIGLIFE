@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    @@include('../../../sprite.svg')
+   <div class="wrapper">
+        @@include('../parts/header.html')
+        <main>
+            <div id="consultation" class="fancy__form" style="display: none;">
+                <picture class="proportional-picture">
+                    <source srcset="assets/images/about-us.avif" type="image/avif">
+                    <source srcset="assets/images/about-us.webp" type="image/webp">
+                    <img src="assets/images/about-us.png" alt="Картинка">
+                </picture>
+                <form action="#">
+                    <span class="h2">Записаться на консультацию</span>
+                    <div class="input__container">
+                        <input type="text" name="make-input" id="make-name" placeholder="Ваше имя">
+                    </div>
+                    <div class="input__container">
+                        <input type="text" name="make-input" id="make-telegram" placeholder="Ваш телеграм">
+                    </div>
+                    <button type="submit" class="button_icon">
+                        Отправить
+                        <svg>
+                            <use xlink:href="#right-arrow-icon"></use>
+                        </svg>
+                    </button>
+                    <div class="privacy-policy checkbox__container">
+                        <input type="checkbox" name="privacy-policy-agree" id="fancy-consultation-agree" required>
+                        <label for="fancy-consultation-agree">
+                            <span class="checkbox-icon">
+
+                            </span>
+                            <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <section class="main-banner-section">
+                <div class="container">
+                    <div class="container__content" data-aos="fade">
+                        <div class="main-banner-section__heading">
+                        <picture class="background-picture">
+                            <img src="assets/images/background-lines-1.svg" alt="Картинка">
+                        </picture>
+                        <p class="h3">Повышаем ваше финансовое благосостояние</p>
+                        <h1><b>BIG LIFE —</b> центр финансового развития</h1>
+                    </div>
+                    <div class="picture__wrapper">
+                        <div class="picture__content">
+                            <picture class="proportional-picture">
+                                <source srcset="assets/images/main-banner.avif" type="image/avif">
+                                <source srcset="assets/images/main-banner.webp" type="image/webp">
+                                <img src="assets/images/main-banner.png" alt="Картинка">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="main-banner-section__advantages">
+                        <p><mark>Даем</mark> реальные инструменты увеличения доходов</p>
+                        <p><mark>Разрабатываем</mark> стратегии финансового развития</p>
+                    </div>
+                    <div class="main-banner-section__buttons">
+                        <a href="#" class="main-button button_contour">Направления развития</a>
+                        <a href="#consultation" data-fancybox class="main-button button_icon">
+                            Получить консультацию
+                            <svg>
+                                <use xlink:href="#right-arrow-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-about-us-section">
+                <div class="container">
+                    <div class="container__content" data-aos="fade">
+                        <h2>О нас</h2>
+                        <div class="two-columns">
+                            <div class="two-columns__column picture__wrapper">
+                                <picture class="proportional-picture">
+                                    <source srcset="assets/images/about-us.avif" type="image/avif">
+                                    <source srcset="assets/images/about-us.webp" type="image/webp">
+                                    <img src="assets/images/about-us.png" alt="Картинка">
+                                </picture>
+                            </div>
+                            <div class="two-columns__column">
+                                <h3>Мы — не просто центр финансового развития, мы помогаем вам выйти на новый уровень жизни.</h3>
+                                <div class="text-content">
+                                    <p>Наша специализация заключается в:</p>
+                                    <ul>
+                                        <li>проведении оценки финансового положения;</li>
+                                        <li>разработке стратегии развития;</li>
+                                        <li>уменьшение долговых обязательств и финансовой нагрузки;</li>
+                                        <li>помощь в получении денежных средств для личных целей, а также для открытия и развития малого и среднего бизнеса;</li>
+                                        <li>сопровождение клиентов на всем пути финансового роста.</li>
+                                    </ul>
+                                </div>
+                                <a href="about-us.html" class="learn-more">Узнать больше</a>
+                            </div>
+                        </div>
+                        <div class="main-about-us__advantages" data-aos="fade-right">
+                            <div class="main-about-us__advantages__item" style="border-color: #394FC2;">
+                                <div class="item__container">
+                                    <div class="item__content">
+                                        <p class="advantages__heading">10к</p>
+                                        <p class="advantages__sub-heading">Консультаций</p>
+                                        <p class="advantages__description">
+                                            провели за всё время нашей работы
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-about-us__advantages__item" style="border-color: #2ABF6F;">
+                                <div class="item__container">
+                                    <div class="item__content">
+                                        <p class="advantages__heading">7к</p>
+                                        <p class="advantages__sub-heading">Человек</p>
+                                        <p class="advantages__description">
+                                            воспользовались нашими услугами или прошли обучение
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-about-us__advantages__item" style="border-color: #989898;">
+                                <div class="item__container">
+                                    <div class="item__content">
+                                        <p class="advantages__heading">20+</p>
+                                        <p class="advantages__sub-heading">инструментов</p>
+                                        <p class="advantages__description">
+                                            индивидуальный подбор инструментов финансового развития
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-about-us__advantages__item" style="border-color: #FE4819;">
+                                <div class="item__container">
+                                    <div class="item__content">
+                                        <p class="advantages__heading">15 лет</p>
+                                        <p class="advantages__sub-heading">Опыта</p>
+                                        <p class="advantages__description">
+                                            помогаем нашим клиентам и ученикам
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="directions-section">
+                <div class="container">
+                    <div class="container__content">
+                        <div class="section__heading" data-aos="fade">
+                            <h2>Направления развития в BIG LIFE</h2>
+                            <p>
+                                Наши программы помогают на любом уровне развития. От закрытия долгов 
+                                или уменьшения платежей по кредитным продуктам, до формирования личного 
+                                капитала, его диверсификации и увеличения ликвидности инвестиционного 
+                                портфеля.
+                            </p>
+                        </div>
+                        <div class="directions__items custom-list" data-aos="fade-right">
+                            <div class="directions__item item_blue">
+                                <svg class="background-figure">
+                                    <use xlink:href="#direction-figure-1"></use>
+                                </svg>
+                                <div class="directions__item__content custom-list__item">
+                                    <h3>Управление финансами</h3>
+                                    <svg class="right-arrow">
+                                        <use xlink:href="#right-arrow-icon"></use>
+                                    </svg>
+                                    <div class="text-content__container">
+                                        <div class="text-content">
+                                            <p>
+                                                Составление финансового плана на срок от 1 месяца до 40 лет и 
+                                                подбор инструментов для формирования инвестиционного портфеля
+                                            </p>
+                                            <a href="#" class="direction__link">Перейти</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="directions__item item_green">
+                                <svg class="background-figure">
+                                    <use xlink:href="#direction-figure-2"></use>
+                                </svg>
+                                <div class="directions__item__content custom-list__item">
+                                    <h3>технология работы с банковскими продуктами</h3>
+                                    <svg class="right-arrow">
+                                        <use xlink:href="#right-arrow-icon"></use>
+                                    </svg>
+                                    <div class="text-content__container">
+                                        <div class="text-content">
+                                            <p>
+                                                Помогаем получить кредитные средства под самый низкий процент, 
+                                                скрытый в официальных банковских предложениях
+                                            </p>
+                                            <a href="#" class="direction__link">Перейти</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="directions__item item_red">
+                                <svg class="background-figure">
+                                    <use xlink:href="#direction-figure-3"></use>
+                                </svg>
+                                <div class="directions__item__content custom-list__item">
+                                    <h3>Трансформационные игры</h3>
+                                    <svg class="right-arrow">
+                                        <use xlink:href="#right-arrow-icon"></use>
+                                    </svg>
+                                    <div class="text-content__container">
+                                        <div class="text-content">
+                                            <p>
+                                                Трансформационные игры являются настоящим жизненным тренингом, который поможет 
+                                                вам определить свои истинные цели и проверить их на правильность и достижимость
+                                            </p>
+                                            <a href="#" class="direction__link">Перейти</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="directions__item item_green">
+                                <svg class="background-figure">
+                                    <use xlink:href="#direction-figure-4"></use>
+                                </svg>
+                                <div class="directions__item__content custom-list__item">
+                                    <h3>курс «я режисер богатой жизни»</h3>
+                                    <svg class="right-arrow">
+                                        <use xlink:href="#right-arrow-icon"></use>
+                                    </svg>
+                                    <div class="text-content__container">
+                                        <div class="text-content">
+                                            <p>
+                                                Комплексная программа, которая включает в себя составление сценария жизни: проработка 
+                                                целей и финансовых стратегий. Подбор инвестиционного портфеля и его развитие.
+                                            </p>
+                                            <a href="#" class="direction__link">Перейти</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video-feedback-section">
+                <div class="container">
+                    <div class="container__content">
+                        <div class="swiper-container swiper-video-feedback" data-aos="fade-right">
+                            <div class="section__heading" data-aos="fade">
+                                <h2>Видеоотзывы</h2>
+                                <div class="swiper-navigation">
+                                    <div class="swiper-button-prev">
+                                        <svg>
+                                            <use xlink:href="#slider-prev-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <svg>
+                                            <use xlink:href="#slider-next-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="video__item">
+                                            <picture class="proportional-picture">
+                                                <source srcset="assets/images/video-preview-1.avif" type="image/avif">
+                                                <source srcset="assets/images/video-preview-1.webp" type="image/webp">
+                                                <img src="assets/images/video-preview-1.png" alt="Картинка">
+                                            </picture>
+                                            <div class="video__play">
+                                                <svg>
+                                                    <use xlink:href="#video-play-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="video__content">
+                                                <p class="video__heading">елена алмазова</p>
+                                                <a href="#" class="video__link">Уникальная технология работы с банковскими продуктами</a>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox-video data-caption="Видео"></a>
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LluVXu8zctY?si=3abXUH4IMx03omu_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video__item">
+                                            <picture class="proportional-picture">
+                                                <source srcset="assets/images/video-preview-2.avif" type="image/avif">
+                                                <source srcset="assets/images/video-preview-2.webp" type="image/webp">
+                                                <img src="assets/images/video-preview-2.png" alt="Картинка">
+                                            </picture>
+                                            <div class="video__play">
+                                                <svg>
+                                                    <use xlink:href="#video-play-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="video__content">
+                                                <p class="video__heading">Антон каракозов</p>
+                                                <a href="#" class="video__link">Путь к мечте</a>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox-video data-caption="Видео"></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video__item">
+                                            <picture class="proportional-picture">
+                                                <source srcset="assets/images/video-preview-3.avif" type="image/avif">
+                                                <source srcset="assets/images/video-preview-3.webp" type="image/webp">
+                                                <img src="assets/images/video-preview-3.png" alt="Картинка">
+                                            </picture>
+                                            <div class="video__play">
+                                                <svg>
+                                                    <use xlink:href="#video-play-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="video__content">
+                                                <p class="video__heading">Татьяна крайнова</p>
+                                                <a href="#" class="video__link">Личное наставничество</a>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox-video data-caption="Видео"></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="video__item">
+                                            <picture class="proportional-picture">
+                                                <source srcset="assets/images/video-preview-4.avif" type="image/avif">
+                                                <source srcset="assets/images/video-preview-4.webp" type="image/webp">
+                                                <img src="assets/images/video-preview-4.png" alt="Картинка">
+                                            </picture>
+                                            <div class="video__play">
+                                                <svg>
+                                                    <use xlink:href="#video-play-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="video__content">
+                                                <p class="video__heading">Линар Аглиуллин</p>
+                                                <a href="#" class="video__link">Курс «Я режисер богатой жизни»</a>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=LluVXu8zctY&ab_channel=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D0%9C%D0%B0%D0%BC%D0%B8%D1%81%D1%82%D0%BE%D0%B2" class="absolute-link" data-fancybox-video data-caption="Видео"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq-section">
+                <div class="container">
+                    <div class="container__content" data-aos="fade">
+                        <div class="faq__content">
+                            <h2>Часто задаваемые вопросы</h2>
+                            <div class="faq__items custom-list" data-theme="black">
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq__items__item accordion">
+                                    <div class="accordion__button custom-list__item">
+                                        <p class="item__heading accordion__button__heading">Lorem ipsum dolor sit amet consectetur?</p>
+                                        <svg class="accordion__button__icon">
+                                            <use xlink:href="#right-arrow-icon"></use>
+                                        </svg>
+                                        <svg class="accordion__close__icon">
+                                            <use xlink:href="#close-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion__container" style="display: none;">
+                                        <div class="accordion__content">     
+                                            <div class="text-content">
+                                                <p>
+                                                    Играть в игру можно хоть сколько. Но обычно раз 1-3 месяца стоит заново сыграть, чтобы скорректировать направление жизни и настрой.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="information-button" data-theme="information-button-light">
+                                <svg>
+                                    <use xlink:href="#info-icon"></use>
+                                </svg>
+                                <div class="information-button__content">
+                                    <p>Не нашли ответ на свой вопрос?</p>
+                                    <a href="#">Свяжитесь с нами</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscription-section">
+                <div class="container">
+                    <div class="container__content">
+                        <div class="two-columns">
+                            <div class="two-columns__column" data-aos="fade-right">
+                                <div class="subscription-form__container">
+                                    <picture class="background-picture">
+                                        <img src="assets/images/background-lines-6.svg" alt="Картинка">
+                                    </picture>
+                                    <form action="#">
+                                        <h2>Подписывайтесь на нашу рассылку и получайте подарки!</h2>
+                                        <div class="form__part_subscribe">
+                                            <div class="form__part_subscribe__type">
+                                                <div class="input__container input__container_link _checked">
+                                                    <svg>
+                                                        <use xlink:href="#mail-icon"></use>
+                                                    </svg>
+                                                </div>
+                                                <a class="input__container input__container_link" href="#" target="_blank">
+                                                    <svg>
+                                                        <use xlink:href="#telegram-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <input type="email" name="subscription-input" id="subscription-mail" placeholder="Ваша почта">
+                                        </div>
+                                        <button type="submit" class="button_icon">
+                                            Подписаться
+                                            <svg>
+                                                <use xlink:href="#right-arrow-icon"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="privacy-policy checkbox__container">
+                                            <input type="checkbox" name="privacy-policy-agree" id="privacy-policy-agree" required>
+                                            <label for="privacy-policy-agree">
+                                                <span class="checkbox-icon">
+                                                    
+                                                </span>
+                                                <span>Я согласен с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="two-columns__column" data-aos="fade-left">
+                                <div class="subscription-dignities__items__wrapper">
+                                    <div class="subscription-dignities__items">
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                            </picture>
+                                            <p>
+                                                Мини-книжка «10 ошибок сценария жизни»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                            </picture>
+                                            <p>
+                                                Гайд «Миллион желаний»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                            </picture>
+                                            <p>
+                                                Гайд «Секреты банков»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                            </picture>
+                                            <p>
+                                                Гайд «Семейный бюджет»
+                                            </p>
+                                        </div>
+                                        <div class="subscription-dignities__item">
+                                            <picture class="icon-plus">
+                                                <img src="assets/images/plus-icon.svg" alt="Картинка">
+                                            </picture>
+                                            <p>
+                                                Гайд «Уменьшение долгов»
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('../parts/footer.html')
+   </div>
+   <script src="assets/js/jquery-3.7.1.min.js"></script>
+   <script src="assets/js/dynamicAdapt.js"></script>
+   <script src="assets/js/aos.js"></script>
+   <script src="assets/js/swiper-bundle.min.js"></script>
+   <script src="assets/js/choices.min.js"></script>
+   <script src="assets/js/fancybox.umd.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/tippy.umd.min.js"></script>
+   <script src="assets/js/imask.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
